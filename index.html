@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>New webpage</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="header">
+            <div>
+                <h1>Asher Haun</h1>
+                <h4>Game and Web Developer.</h4>
+                <button onclick="scrollDown()">My Projects</button>
+            </div>
+        </div>
+        <div class="panel down">
+            <h1>Asher Haun</h1>
+            <h4>
+                I am a computer science student studying remotely at UT Rio Grande Valley.<br>I enjoy computer programming, mountain biking, camping,<br>and brazilian jiu jitsu. I plan on graduating with<br>a degree in either Computer Science, or Software Engineering.
+                <br>I am currently working on a 2D java game engine using LWJGL/Open GL.
+            </h4>
+        </div>
+        <script>
+            function scrollDown () {
+                document.querySelector(".panel").classList.toggle("down");
+                document.querySelector(".header").classList.toggle("up");
+                document.querySelector("html").classList.toggle("up");
+            }
+
+            var scrollableElement = document.body;
+            scrollableElement.addEventListener('wheel', handleScroll);
+
+            function checkScrollDirectionIsUp(event) {
+                if (event.wheelDelta) {
+                    return event.wheelDelta > 0;
+                }
+                return event.deltaY < 0;
+            }
+
+            function handleScroll(event) {
+                if (checkScrollDirectionIsUp(event)) {
+                    document.querySelector(".panel").classList.add("down");
+                    document.querySelector(".header").classList.remove("up");
+                    document.querySelector("html").classList.remove("up");
+                } else {
+                    document.querySelector(".panel").classList.remove("down");
+                    document.querySelector(".header").classList.add("up");
+                    document.querySelector("html").classList.add("up");
+                }
+            }
+        </script>
+    </body>
+</html>

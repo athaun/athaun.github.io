@@ -1,3 +1,3 @@
-## Welcome to the MSA Minecraft server webpage.
-
-The minecraft server is available at `mc.athaun.me`
+# English-portfolio
+This is a my portfolio made for an assignment in English 1301.
+athaun.github.io/English-portfolio
