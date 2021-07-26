@@ -5,22 +5,33 @@
         <title>New webpage</title>
         <link rel="stylesheet" href="index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="data/fontawesome/css/all.css" rel="stylesheet">
     </head>
-    <body>
+    <body onload="loadWords()">
+        <span id="backgroundText" >
+            <!-- <h1>Game Developer</h1>
+            <h1>Web Design</h1>
+            <h1>Java Python C++</h1> -->
+        </span>
         <div class="header">
             <div>
-                <h1>Asher Haun</h1>
-                <h4>Game and Web Developer.</h4>
-                <button onclick="scrollDown()">My Projects</button>
+                <div class="container">
+                    <div class="title">Asher Haun</div>
+                    <div>
+                        <button onclick="scrollDown()"><i class="fas fa-angle-down"></i></button>
+                    </div>
+                </div>
+                
             </div>
         </div>
-        <div class="panel down">
+        <!-- <div class="panel down">
             <h1>Asher Haun</h1>
             <h4>
                 I am a computer science student studying remotely at UT Rio Grande Valley.<br>I enjoy computer programming, mountain biking, camping,<br>and brazilian jiu jitsu. I plan on graduating with<br>a degree in either Computer Science, or Software Engineering.
                 <br>I am currently working on a 2D java game engine using LWJGL/Open GL.
             </h4>
-        </div>
+        </div> -->
+        
         <script>
             function scrollDown () {
                 document.querySelector(".panel").classList.toggle("down");
@@ -31,14 +42,14 @@
             var scrollableElement = document.body;
             scrollableElement.addEventListener('wheel', handleScroll);
 
-            function checkScrollDirectionIsUp(event) {
+            function checkScrollDirectionIsUp () {
                 if (event.wheelDelta) {
                     return event.wheelDelta > 0;
                 }
                 return event.deltaY < 0;
             }
 
-            function handleScroll(event) {
+            function handleScroll () {
                 if (checkScrollDirectionIsUp(event)) {
                     document.querySelector(".panel").classList.add("down");
                     document.querySelector(".header").classList.remove("up");
@@ -49,6 +60,31 @@
                     document.querySelector("html").classList.add("up");
                 }
             }
+
+            var words = ["Game Development", "Unity 3D", "Web Design", "Java", "Python", "Javascript", "Linux", "Web Development", "Arduino", "OpenGL", "HTML & CSS", "Git"]
+
+            function loadWords (event) {
+                let div = document.querySelector("#backgroundText")
+                for (var i = 0; i < words.length; i++) {
+                    availableWords = words
+                    let line = ""
+                    for (var j = 0; j < availableWords.length; j++) {
+                        let k = Math.round(Math.random() * availableWords.length)
+                        line += availableWords[k] + ", "
+
+                    }
+                    
+                    newWord = document.createElement("h1")
+                    newWord.innerHTML = line
+                    newWord.style.marginLeft = -(Math.random() * 1000).toString() + "px";
+                    div.append(newWord)
+
+                }
+            }
+
+
+
+
         </script>
     </body>
 </html>
