@@ -34,31 +34,15 @@
         
         <script>
             function scrollDown () {
-                document.querySelector(".panel").classList.toggle("down");
-                document.querySelector(".header").classList.toggle("up");
-                document.querySelector("html").classList.toggle("up");
+
             }
 
-            var scrollableElement = document.body;
-            scrollableElement.addEventListener('wheel', handleScroll);
-
             function checkScrollDirectionIsUp () {
-                if (event.wheelDelta) {
-                    return event.wheelDelta > 0;
-                }
-                return event.deltaY < 0;
+
             }
 
             function handleScroll () {
-                if (checkScrollDirectionIsUp(event)) {
-                    document.querySelector(".panel").classList.add("down");
-                    document.querySelector(".header").classList.remove("up");
-                    document.querySelector("html").classList.remove("up");
-                } else {
-                    document.querySelector(".panel").classList.remove("down");
-                    document.querySelector(".header").classList.add("up");
-                    document.querySelector("html").classList.add("up");
-                }
+
             }
 
             var words = ["Game Development", "Unity 3D", "Web Design", "Java", "Python", "Javascript", "Linux", "Web Development", "Arduino", "OpenGL", "HTML & CSS", "Git"]
@@ -77,6 +61,8 @@
                     newWord = document.createElement("h1")
                     newWord.innerHTML = line
                     newWord.style.marginLeft = -(Math.random() * 1000).toString() + "px";
+                    let c = 6
+                    newWord.style.color = `rgb(${c}, ${c}, ${c})`
                     div.append(newWord)
 
                 }
