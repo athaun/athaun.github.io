@@ -1,17 +1,5 @@
 var chunkSize = 60;
 var blockSize = 30;
-function setup() {
-  colorMode(HSB);
-  canvas = createCanvas(window.innerWidth, window.innerHeight, "webgl");
-  canvas.parent("canvas-parent");
-  smooth();
-  background(0);
-  createHeightMapValues();
-
-  chunkSize = Math.floor(width/blockSize)
-}
-
-
 var increment = 0.04;
 var xIncrement = increment;
 var yIncrement = increment;
@@ -20,6 +8,19 @@ let terrain = [];
 for (var x = 0; x < chunkSize; x++) {
     terrain.push(new Array(chunkSize))
 }
+function setup() {
+  colorMode(HSB);
+  canvas = createCanvas(window.innerWidth, window.innerHeight, "webgl");
+  canvas.parent("canvas-parent");
+  smooth();
+  background(0);
+  createHeightMapValues();
+
+  chunkSize = Math.floor(windowWidth/blockSize)
+}
+
+
+
 
 var yoff = 0
 function createHeightMapValues () {
@@ -80,11 +81,12 @@ function draw () {
 
 function windowResized() {
     resizeCanvas(windowWidth, windowHeight);
-    chunkSize = Math.floor(width/blockSize)
+    chunkSize = Math.floor(windowWidth/blockSize)
     yoff = 0
     terrain = [];
     for (var x = 0; x < chunkSize; x++) {
         terrain.push(new Array(chunkSize))
     }
+    console.log(terrain)
     createHeightMapValues()
 }
