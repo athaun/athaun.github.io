@@ -1,102 +1,90 @@
-const noiseScale = 0.002; // a lower value will result in less convolutions
-const highQuality = true; // true: render lines using an ellipse, false: render lines drawing indivudual pixels
-
-const colorRanges = [
-  217, 289, 29, 0, 0, 0
-];
-
-let flowField = [];
-let angleMod = 0;
-let currentColorSet = [];
-
+var chunkSize = 60;
+var blockSize = 30;
 function setup() {
   colorMode(HSB);
   canvas = createCanvas(window.innerWidth, window.innerHeight, "webgl");
   canvas.parent("canvas-parent");
-
   smooth();
+  background(0);
+  createHeightMapValues();
 
-  background(0, 0, 0);
-
- 
-
-  const maxLines = highQuality ? 6000 : 10000; // rendering ellipses is using more ressources, so we lower the paricles
-
-  for (let i = 0; i < maxLines; i++) {
-    flowField.push(new FlowLine(random(0, width), random(0, height), random(colorRanges)));
-  }
+  chunkSize = Math.floor(width/blockSize)
 }
 
-function draw() {
-  push();
-  translate(-width / 2, -height / 2);
-//   background(0)
-  for (let i = 0; i < flowField.length; i++) {
-    const line = flowField[i];
 
-    if (line.isOutOfBounds()) {
-      flowField.splice(i, 1);
-      flowField.push(new FlowLine(random(0, width), random(0, height), random(colorRanges)));
-      angleMod = map(noise(frameCount * 0.0001), 0, 1, -180, 180);
-    } else {
-      line.draw();
+var increment = 0.04;
+var xIncrement = increment;
+var yIncrement = increment;
+
+let terrain = [];
+for (var x = 0; x < chunkSize; x++) {
+    terrain.push(new Array(chunkSize))
+}
+
+var yoff = 0
+function createHeightMapValues () {
+    for (var x = 0; x < chunkSize; x++) {
+        var xoff = 0
+        for (var y = 0; y < chunkSize; y++) {
+            terrain[x][y] = map(simplex2(xoff, yoff), -1, 1, 0, 100)
+            xoff += increment
+        }
+        yoff += increment
     }
-  }
-  pop();
 }
 
-function FlowLine(x, y, c) {
-  this.alpha = 100;
-  this.c = c
+function drawHeightMap () {
 
-  this.initialize = function () {
-    this.point = createVector(x, y);
-    this.updateNoise();
-    this.updateDirection();
-    this.setColor();
-  };
-
-  this.draw = function () {
     noStroke();
-    fill(this.color);
-    ellipse(this.point.x, this.point.y, 2);
+    // stroke(0)
+    rotateZ(frameCount * 0.001)
+    push()
+    translate(-(chunkSize*blockSize)/2, -(chunkSize*blockSize)/2);
+    for (var x = 1; x < chunkSize - 1; x++) {
+        beginShape(TRIANGLE_STRIP)
+        for (var y = 1; y < chunkSize - 1; y++) {
 
-    this.updateDirection();
-    this.updateNoise();
-    this.alpha -= 0.5;
-  };
+            let top = 400
+            let bottom = -400
 
-  this.setColor = function () {
-    this.color = color(
-        this.c, 70, map(this.noise, 0, 1, 0, 100)
-    );
-
-    if (this.c == 0) {
-        this.color = color(
-            c, 0, 0
-        );
+            fill(getColor(x, y))
+            vertex((x) * blockSize, y * blockSize, map(terrain[x][y], 0, 100, bottom, top))
+            fill(getColor(x + 1, y))
+            vertex((x+1) * blockSize, (y) * blockSize, map(terrain[x + 1][y], 0, 100, bottom, top))
+            fill(getColor(x, y + 1))
+            vertex((x) * blockSize, (y + 1) * blockSize, map(terrain[x][y + 1], 0, 100, bottom, top))
+            fill(getColor(x + 1, y + 1))
+            vertex((x+1) * blockSize, (y + 1) * blockSize, map(terrain[x + 1][y + 1], 0, 100, bottom, top))
+            
+        }
+        endShape()
     }
-  };
+    pop()
+}
 
-  this.updateDirection = function () {
-    this.direction = p5.Vector.fromAngle(
-      radians(map(this.noise, 0, 1, 0, 360) + angleMod)
-    );
-    this.point.add(this.direction);
-  };
+function getColor (x, y) {
+    let c = lerpColor(
+        color(217, map(terrain[x][y], 0, 100, 60, 80), 90), 
+        color(281, map(terrain[x][y], 0, 100, 50, 70), 100), 
+        terrain[x][y]/100);
 
-  this.updateNoise = function () {
-    this.noise = noise(this.point.x * noiseScale, this.point.y * noiseScale);
-  };
+    return c
+}
 
-  this.isOutOfBounds = function () {
-    return (
-      this.point.x < 0 ||
-      this.point.y < 0 ||
-      this.point.x > width ||
-      this.point.y > height
-    );
-  };
+function draw () {
+    background(257, 35, 25)
+    rotateX(-90)
+    translate(0, -300, 0)
+    drawHeightMap();
+}
 
-  this.initialize();
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+    chunkSize = Math.floor(width/blockSize)
+    yoff = 0
+    terrain = [];
+    for (var x = 0; x < chunkSize; x++) {
+        terrain.push(new Array(chunkSize))
+    }
+    createHeightMapValues()
 }
