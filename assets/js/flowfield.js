@@ -5,18 +5,19 @@ var xIncrement = increment;
 var yIncrement = increment;
 
 let terrain = [];
-for (var x = 0; x < chunkSize; x++) {
-    terrain.push(new Array(chunkSize))
-}
-function setup() {
-  colorMode(HSB);
-  canvas = createCanvas(window.innerWidth, window.innerHeight, "webgl");
-  canvas.parent("canvas-parent");
-  smooth();
-  background(0);
-  createHeightMapValues();
 
-  chunkSize = Math.floor(windowWidth/blockSize)
+function setup() {
+    colorMode(HSB);
+    canvas = createCanvas(window.innerWidth, window.innerHeight, "webgl");
+    canvas.parent("canvas-parent");
+    smooth();
+    background(0);
+  
+    chunkSize = Math.floor(windowWidth/blockSize)
+    for (var x = 0; x < chunkSize; x++) {
+        terrain.push(new Array(chunkSize))
+    }   
+    createHeightMapValues();
 }
 
 
