@@ -1,81 +1,86 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>New webpage</title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="data/fontawesome/css/all.css" rel="stylesheet">
+    </head>
+    <body onload="loadWords()">
+        <span id="backgroundText" >
 
-<head>
-    <meta charset="utf-8">
-    <title>Asher Haun's Portfolio</title>
-    <link rel="stylesheet" href="assets/css/index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-
-<body onload="loadWords()">
-
-    <section class="heroParent">
-        <div class="heroChild">
-
-            <!-- <span id="backgroundText"></span> -->
-
-            <!-- <h1 class="heroHeader">Asher Haun</h1> -->
-
-            <!-- <p class="heroText">Text?</p> -->
-
-            <!-- <button class="heroButton"><i class="fas fa-angle-down "></i></button> -->
-
+        </span>
+        <div class="header">
+            <div>
+                <div class="container">
+                    <h1 class="title">Asher Haun</h1>
+                    <div>
+                        <button onclick="scrollRight(1)"><i class="fas fa-angle-right"></i></button>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-    </section>
-
-    <section class="container containerPrimary">
-<!-- 
-        I am a computer science student studying remotely at UT Rio Grande Valley.<br>I enjoy computer programming, mountain biking, camping,<br>and brazilian jiu jitsu. I plan on graduating with<br>a degree in either Computer Science, or Software Engineering.<br>I
-        am currently working on a 2D java game engine using LWJGL/Open GL. -->
-
-    </section>
-    <section class="container containerSecondary">
-
         
+        
+        <script>
+            let playGame = false;
 
-    </section>
-    <main>
-
-    </main>
-    <footer></footer>
-
-    <div id="canvas-parent"> </div>
-    <script src="assets/js/SimplexNoise.js"></script>
-    <script src="assets/js/flowfield.js"></script>
-
-    <script>
-        function checkScrollDirectionIsUp() {
-
-        }
-
-        function handleScroll() {
-
-        }
-
-        var words = ["Game Development ", "Unity 3D ", "Web Design ", "Java ", "Python ", "Javascript ", "Linux ", "Web Development ", "Arduino ", "OpenGL ", "HTML & CSS ", "Git "]
-
-        function loadWords(event) {
-            // let div = document.querySelector(".heroParent")
-            // for (var i = 0; i < words.length; i++) {
-            //     availableWords = words
-            //     let line = " "
-            //     for (var j = 0; j < availableWords.length; j++) {
-            //         let k = Math.round(Math.random() * availableWords.length)
-            //         line += availableWords[k] + ", "
-            //     }
-
-            //     newWord = document.createElement("h1")
-            //     newWord.innerHTML = line
-            //     newWord.style.marginLeft = -(Math.random() * 1000).toString() + "px ";
-            //     let c = 6
-            //         // newWord.style.color = `rgb(${c}, ${c}, ${c})`
-            //     div.append(newWord)
-            // }
-        }
-    </script>
-</body>
-
-</html>
+            let widths = []
+            function scrollRight (stage) {
+                let lines = document.querySelector("#backgroundText").children
+                let name = document.querySelector(".container")
+                let button = document.querySelector(".container button")
+                for (var i = 0; i < lines.length; i ++) {
+                    let opacity = 1.0;
+                    let mLeft = widths[i];
+                    lines[i].style.transition = "all 0.5s"
+                    name.style.transition = "all 1.7s"
+                    button.style.transition = "all 0.1s"
+                    while (opacity >= 0) {
+                        opacity -= 0.02;
+                        mLeft --;
+                        lines[i].style.marginLeft = mLeft.toString() + "px"
+                        lines[i].style.opacity = opacity.toString()
+                        name.style.opacity = opacity.toString()
+                        button.style.opacity = opacity.toString()
+                    }
+                    playGame = true;
+                }
+            }
+            
+            var words = ["Game Dev", "Unity 3D", "Web Design", "Java", "Python", "Javascript", "Linux", "Web Dev", "Arduino", "OpenGL", "HTML & CSS", "Git"]
+            
+            function loadWords (event) {
+                let div = document.querySelector("#backgroundText")
+                for (var i = 0; i < words.length; i++) {
+                    availableWords = words
+                    let line = document.createElement("h1");
+                    for (var j = 0; j < availableWords.length; j++) {
+                        let word = document.createElement("span");
+                        let k = Math.round(Math.random() * (availableWords.length - 1))
+                        word.innerText = availableWords[k] + " "
+                        line.append(word)
+                    }
+                    
+                    widths[i] = -(Math.random() * 1000);
+                    line.style.marginLeft = widths[i].toString() + "px"
+                    line.style.opacity = "0"
+                    line.style.transition = "all 0.5s"
+                    div.append(line)
+                }
+                
+                let lines = div.children
+                for (var i = 0; i < lines.length; i ++) {
+                    let element = lines[i]
+                    setTimeout(() => {
+                        element.style.opacity = 1
+                    }, 0);   
+                } 
+            }
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+            <script src="assets/js/sketch.js"></script>
+    </body>
+    </html>
