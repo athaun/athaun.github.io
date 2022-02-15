@@ -48,7 +48,7 @@ body{
     font-size: 10vh;
     color: transparent;
     background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #a250c8 46%, #FFCC70 100%);
+    background-image: linear-gradient(43deg, #4158D0 0%, #a250c8 100%);
     background-size: 100%;
     background-position: 50% 50%;
     -webkit-background-clip: text;
@@ -94,6 +94,7 @@ body{
     margin-top: -19.5px; 
     position: fixed;
 }
+
 #backgroundText {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -134,19 +135,6 @@ main canvas {
     margin: 0 auto;
     text-align: center;
     color: rgb(155, 154, 203);
-
-
-
-
-    color: transparent;
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #a250c8 46%, #FFCC70 100%);
-    background-size: 100%;
-    background-position: 50% 50%;
-    -webkit-background-clip: text;
-
-
-
 
     /* transition: all 4.4s; */
 }
@@ -262,22 +250,34 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     font-weight: 700;
 }
 
-#chatBubble #chatBubbleLink {
+#chatBubbleLink {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 40px;
+    top: 0;
+    left: 0;
+    width: 180px;
     height: 40px;
-    margin: 50px 50px;
+    margin: 35px;
+    padding: 10px;
 
-    background: #5754C2;
-    border-radius: 100%;
-    padding: 20px;
+    background: linear-gradient(43deg, #5357C8 0%, #5357C8 100%);
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+#chatBubbleLink h3 {
+    /* color: rgb(12, 12, 12); */
+    margin-left: 43px;
+    margin-top: 10px;
+    font-weight: 600;
 }
 
 #chatBubbleLink img {
     width: 40px;
     height: 40px;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
