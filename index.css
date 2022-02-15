@@ -262,6 +262,24 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     font-weight: 700;
 }
 
+#chatBubble #chatBubbleLink {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    margin: 50px 50px;
+
+    background: #5754C2;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+#chatBubbleLink img {
+    width: 40px;
+    height: 40px;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* @media (max-width: 800px) {
     .column {
