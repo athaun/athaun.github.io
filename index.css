@@ -6,7 +6,7 @@ html{
 body{
     background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
     background: linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
-    background: rgb(0, 0, 0);
+    background: rgb(12, 12, 12);
     margin: 0;
     width: 100%;
     height: 100%;
@@ -199,7 +199,7 @@ main canvas {
 }
 
 div.projectsList > div > div:nth-child(2) > img {
-    border-radius: 10px;
+    border-radius: 5px;
     width: 100%;
     /* margin: 0 auto; */
     /* height: 300px; */
@@ -242,6 +242,24 @@ div.projectsList > div > div:nth-child(2) > img {
 .links a {
     text-decoration: none;
     padding-right: 10px;         
+}
+
+/* Skill pills */
+div.projectsList > div > div:nth-child(1) > ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+div.projectsList > div > div:nth-child(1) > ul > li {
+    list-style: none;
+    border: 1px solid #5754C2;
+    color: #5754C2;
+    width: fit-content;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 4px 2px;
+    font-weight: 700;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
