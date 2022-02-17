@@ -270,12 +270,12 @@ div.projectsList > div > div:nth-child(1) > ul > li {
 
 /* Contact bubble */
 
-#chatBubbleLink {
+#contactBubbleLink {
     position: fixed;
     top: 0;
     left: 0;
     width: 180px;
-    height: 40px;
+    height: 60px;
     margin: 35px;
     padding: 10px;
     box-shadow: 5px 5px 50px 1px rgba(0, 0, 0, 0.4);
@@ -285,27 +285,63 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     text-decoration: none;
     transition: all 0.25s ease;
     border: 1px solid rgba(0, 0, 0, 0);
+    z-index: 4;
 }
 
-#chatBubbleLink:hover,
-#chatBubbleLink:focus {
+#contactBubbleLink:hover {
     background: #1e1e21;
     border: 1px solid #5357C8;
+    cursor: pointer;
 }
 
-#chatBubbleLink h3 {
+#contactBubbleLink h3 {
     /* color: rgb(12, 12, 12); */
-    margin-left: 43px;
+    margin-left: 48px;
     margin-top: 10px;
     font-weight: 600;
 }
 
-#chatBubbleLink img {
+#contactBubbleLink img {
     width: 40px;
     height: 40px;
     position: absolute;
     left: 0;
     margin-left: 20px;
+}
+
+#contactBubbleLink.open {
+    background-color: #1e1e21;
+}
+
+/* Contacts page */
+#contactPage {
+    transition: all 0.5s;
+    z-index: 3;
+    border-radius: 50px;
+}
+#contactPage.closed {
+    width: 180px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 35px;
+}
+
+#contactPage.open {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    background: rgb(20, 20, 20);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 20px !important;
+    /* margin: 0px; */
+    /* border-radius: 0px; */
+}
+
+body.nonscrollable {
+    overflow: hidden;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
