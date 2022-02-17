@@ -85,6 +85,7 @@ function generateProjectList (json) {
         let thumbnail = p["thumbnail"]
 
         let projectCard = document.createElement("div")
+        projectCard.classList += "fadeIn"
         projectCard.innerHTML = `
         <div>
             <h2>${name}</h2>
@@ -117,4 +118,7 @@ fetch("../../data/projects.json")
 .then(json => {
     generateProjectFilters(json)
     generateProjectList(json)
+
+    checkScroll()
+    window.addEventListener('scroll', debounce(checkScroll));
 })

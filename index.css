@@ -2,6 +2,7 @@
 html{
     width:100%;
     height: 100%;
+    box-sizing: border-box;
 }
 body{
     background: -webkit-linear-gradient(rgb(235, 236, 231), rgb(255, 255, 255));
@@ -13,6 +14,7 @@ body{
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
 }
+
 .container {
     position:fixed;
     -webkit-transform: translate(-50%,-50%);
@@ -232,6 +234,17 @@ div.projectsList > div > div:nth-child(2) > img {
     margin-bottom: 20px;
 }
 
+.fadeIn {
+    opacity: 0;
+    transition: opacity .4s ease-in;
+}
+.active {
+    opacity: 1;
+}
+.special {
+    border: 1px dashed pink;
+}
+
 .links a {
     text-decoration: none;
     padding-right: 10px;         
@@ -254,6 +267,8 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     margin: 4px 2px;
     font-weight: 700;
 }
+
+/* Contact bubble */
 
 #chatBubbleLink {
     position: fixed;
