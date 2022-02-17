@@ -133,10 +133,15 @@ main canvas {
     z-index: -1 !important;
     height: 100vh;
     margin: 0 auto;
+    margin-bottom: 30px;
     text-align: center;
     color: rgb(155, 154, 203);
 
     /* transition: all 4.4s; */
+}
+
+#mainContent h4 {
+    color: #d3cee6;
 }
 
 
@@ -258,11 +263,19 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     height: 40px;
     margin: 35px;
     padding: 10px;
-
-    background: linear-gradient(43deg, #5357C8 0%, #5357C8 100%);
+    box-shadow: 5px 5px 50px 1px rgba(0, 0, 0, 0.4);
+    background: rgb(23, 23, 23); /* #5357C8 */
     border-radius: 50px;
-    color: white;
+    color: #d3cee6;
     text-decoration: none;
+    transition: all 0.25s ease;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+#chatBubbleLink:hover,
+#chatBubbleLink:focus {
+    background: #1e1e21;
+    border: 1px solid #5357C8;
 }
 
 #chatBubbleLink h3 {
