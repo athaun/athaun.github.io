@@ -1,61 +1,3 @@
-let a = `
-<div>
-    <div>
-        <h2>Azurite Game Engine</h2>
-        <p>Azurite is an open source 2D java game engine built on LWJGL. I am the lead project manager of a team of international developers who contribute to the engine.</p>
-        <p>
-            <ul>
-                <li>Java</li>
-                <li>LWJGL/OpenGL</li>
-                <li>Team management</li>
-                <li>Git Management</li>
-            </ul>
-        </p>
-        <div class="links">
-            <a href="#">
-                <img src="assets/icons/GitHub.png" alt="">
-            </a>
-            <a href="#">
-                <img src="assets/icons/link.png" alt="">
-            </a>
-            <a href="#">
-                <img src="assets/icons/youtube.png" alt="">
-            </a>
-        </div>
-    </div>
-    <div>
-        <img src="assets/thumbnails/azurite-engine.png">
-    </div>
-</div>
-
-"projectList" : [
-    {
-        "name" : "Azurite Game Engine",
-        "description" : "Azurite is an open source 2D java game engine built on LWJGL. I am the lead project manager of a team of international developers who contribute to the engine.",
-        "tags" : ["Java", "OpenGL", "Team management", "Git"],
-        "links" : [
-            {"GitHub" : "https://github.com/athaun/#"},
-            {"Project Link" : ""},
-            {"YouTube" : ""}
-        ],
-        "thumbnail" : "assets/thumbnails/azurite-engine.png"
-    },
-    ...
-]
-
-"tags" : [
-    {"Java" : "assets/icons/Java.png"},
-    {"C++" : "assets/icons/C Plus Plus.png"},
-    {"Javascript" : "assets/icons/Javascript.png"},
-    {"Python" : "assets/icons/Python.png"},
-    {"Web design" : "assets/icons/CSS3.png"},
-    {"Unity" : "assets/icons/Unity.png"},
-    {"C#" : "assets/icons/CS.png"},
-    {"OpenGL" : "assets/icons/Video Card.png"},
-    {"Linux" : "assets/icons/Linux.png"}
-],
-`
-
 function $ (selector) {
     return document.querySelector(selector)
 }
@@ -162,6 +104,9 @@ function generateProjectList (json) {
         `
 
         projectsParent.appendChild(projectCard)
+        if (i == projects.length - 1) {
+            projectsParent.appendChild(document.createElement("br"))
+        }
     }
 }
 

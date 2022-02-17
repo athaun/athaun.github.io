@@ -16,7 +16,7 @@
             "description" : "Azurite is an open source 2D java game engine built on LWJGL. I am the lead project manager of a team of international developers who contribute to the engine.",
             "tags" : ["Java", "OpenGL", "Team management", "Git"],
             "links" : [
-                {"GitHub" : "https://github.com/athaun/#"},
+                {"GitHub" : "https://github.com/azurite-engine/Azurite"},
                 {"Project Link" : ""},
                 {"YouTube" : ""}
             ],
@@ -68,5 +68,3 @@
         }
     ]
 }
-
-
