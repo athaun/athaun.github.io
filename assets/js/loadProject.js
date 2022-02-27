@@ -64,6 +64,12 @@ function generateProjectList (json, initialSetup) {
     let projectsParent = $("#mainContent > div.projectsList")
     let projects = json["projectList"]
 
+    let projectsDisplayed = 0
+    let displayCount = document.createElement("h4")
+    displayCount.innerText = "Select a skill to filter projects"
+    displayCount.id = "displayCount"
+    projectsParent.appendChild(displayCount)
+
     for (let i in projects) {
         let p = projects[i]
         
@@ -98,8 +104,9 @@ function generateProjectList (json, initialSetup) {
         if (!p["tags"].some(item => selectedSkills.includes(item)) && selectedSkills.length != 0) {
             // If filtering by tags, and this project does not contain any matching tags, skip it
             continue
-        }
-        
+        } else if (selectedSkills.length != 0) {
+            projectsDisplayed ++
+        }    
 
         let projectCard = document.createElement("div")
         projectCard.classList += "fadeIn"
@@ -126,6 +133,13 @@ function generateProjectList (json, initialSetup) {
             projectsParent.appendChild(document.createElement("br"))
         }
     }
+
+    if (selectedSkills.length != 0) {
+        displayCount.innerText = `Showing ${projectsDisplayed} project` + (projectsDisplayed != 1 ? "s" : "")
+        if (projectsDisplayed == 0) {
+            displayCount.innerText = "Nothing to see here for now."
+        }
+    }
 }
 
 function filterProjects (clickedSkill) {
@@ -149,8 +163,6 @@ function filterProjects (clickedSkill) {
     checkScroll()
 
 }
-
-
 
 fetch("../../data/projects.json")
 .then(response => {
