@@ -3,20 +3,7 @@ function $ (selector) {
 }
 
 let selectedSkills = []
-function filterProjects (clickedSkill) {
-    let div = clickedSkill.target
-    let id = clickedSkill.target.querySelector("p").id
-    let skillName = clickedSkill.target.querySelector("h2").innerHTML
-    console.log(skillName)
-
-    if (selectedSkills.includes(skillName)) {
-        selectedSkills.splice(selectedSkills.indexOf(skillName), 1)
-    } else {
-        selectedSkills.push(skillName)
-    }
-
-    div.classList.toggle("selected")
-}
+let projectsJson
 
 function generateProjectFilters (json) {
     let projectFilters = $("#projectFilters")
@@ -73,7 +60,7 @@ function countTag (json, tag) {
     // console.log(result)
 }
 
-function generateProjectList (json) {
+function generateProjectList (json, initialSetup) {
     let projectsParent = $("#mainContent > div.projectsList")
     let projects = json["projectList"]
 
@@ -82,12 +69,9 @@ function generateProjectList (json) {
         
         let name = p["name"]
         let description = p["description"]
-        let tags = ``
-        for (let j in p["tags"]) {
-            tags += `<li>${p["tags"][j]}</li>`
-            countTag(json, p["tags"][j])
-        }
         let links = ``
+        let thumbnail = p["thumbnail"]
+
         for (let j in p["links"]) {
             // If the URL isn't empty, add a link for it
             // I know it is hideous, it is grabbing the value (URL) without directly knowing the key (name)
@@ -96,12 +80,26 @@ function generateProjectList (json) {
             if (url != "") {
                 links += `
                 <a href="${url}" target="_blank">
-                    <img src="assets/icons/${linkType}.png" alt="">
+                <img src="assets/icons/${linkType}.png" alt="">
                 </a>
                 `
             }
         }
-        let thumbnail = p["thumbnail"]
+        
+        let tags = ``
+        for (let j in p["tags"]) {
+            tags += `<li>${p["tags"][j]}</li>`
+
+            if (initialSetup) {
+                countTag(json, p["tags"][j])
+            }
+        }
+        
+        if (!p["tags"].some(item => selectedSkills.includes(item)) && selectedSkills.length != 0) {
+            // If filtering by tags, and this project does not contain any matching tags, skip it
+            continue
+        }
+        
 
         let projectCard = document.createElement("div")
         projectCard.classList += "fadeIn"
@@ -130,13 +128,39 @@ function generateProjectList (json) {
     }
 }
 
+function filterProjects (clickedSkill) {
+    let div = clickedSkill.target
+    let skillName = div.querySelector("h2").innerHTML
+    div.classList.toggle("selected")
+
+    if (selectedSkills.includes(skillName)) {
+        selectedSkills.splice(selectedSkills.indexOf(skillName), 1)
+    } else {
+        selectedSkills.push(skillName)
+    }
+
+    let projectsList = $("div.projectsList")
+    while (projectsList.lastChild) {
+        projectsList.removeChild(projectsList.lastChild)
+    }
+
+    generateProjectList(projectsJson, false)
+    firstCheck = true;
+    checkScroll()
+
+}
+
+
+
 fetch("../../data/projects.json")
 .then(response => {
    return response.json();
 })
 .then(json => {
     generateProjectFilters(json)
-    generateProjectList(json)
+    generateProjectList(json, true)
+
+    projectsJson = json
 
     checkScroll()
     window.addEventListener('scroll', debounce(checkScroll));

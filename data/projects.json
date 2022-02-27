@@ -25,7 +25,7 @@
         {
             "name" : "Azurite Website",
             "description" : "This is a website and accompanying documentation site I built for the Azurite Game Engine.",
-            "tags" : ["Javascript", "Web Design", "HTML & CSS"],
+            "tags" : ["Javascript", "Web design", "HTML & CSS"],
             "links" : [
                 {"GitHub" : "https://github.com/azurite-engine/azurite-engine.github.io"},
                 {"Link" : "https://azurite-engine.github.io/"},
@@ -36,7 +36,7 @@
         {
             "name" : "OurJSEditor.com",
             "description" : "I contributed to the Open Source project OurJSEditor, revamping the design of the site for improved UX and cleanliness.",
-            "tags" : ["Web Design", "CSS", "UX"],
+            "tags" : ["Web design", "CSS", "UX"],
             "links" : [
                 {"GitHub" : "https://github.com/OurJSEditor/OurJSEditor"},
                 {"Link" : "https://ourjseditor.com/"},
@@ -47,7 +47,7 @@
         {
             "name" : "Flask/Socket IO Chat",
             "description" : "This is a Flask and socket.io based chat application. It supports multiple users and multiple rooms.",
-            "tags" : ["Web Design", "Javascript", "Python", "Flask", "Socket.io"],
+            "tags" : ["Web design", "Javascript", "Python", "Flask", "Socket.io"],
             "links" : [
                 {"GitHub" : "https://github.com/athaun/Flask-chat"},
                 {"Link" : "http://chat.athaun.tech/"},
@@ -58,10 +58,10 @@
         {
             "name" : "MyVariety IT Services",
             "description" : "This is a mockup design I created for MyVariety IT in their efforts to redesign their landing page.",
-            "tags" : ["Web Design"],
+            "tags" : ["Web design"],
             "links" : [
-                {"GitHub" : "https://github.com/athaun/MyVariety-SiteDesign"},
-                {"Link" : "https://athaun.tech/MyVariety-SiteDesign/"},
+                {"GitHub" : "https://github.com/athaun/MyVariety-Sitedesign"},
+                {"Link" : "https://athaun.tech/MyVariety-Sitedesign/"},
                 {"YouTube" : ""}
             ],
             "thumbnail" : "assets/thumbnails/framed/myvariety.png"
