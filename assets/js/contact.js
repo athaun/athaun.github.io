@@ -1,11 +1,3 @@
-function openContactsPage () {
-
-}
-
-function closeContactsPage () {
-
-}
-
 let showContacts = false;
 $("#contactBubbleLink").onclick = (e => {
     showContacts = !showContacts

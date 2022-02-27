@@ -2,6 +2,22 @@ function $ (selector) {
     return document.querySelector(selector)
 }
 
+let selectedSkills = []
+function filterProjects (clickedSkill) {
+    let div = clickedSkill.target
+    let id = clickedSkill.target.querySelector("p").id
+    let skillName = clickedSkill.target.querySelector("h2").innerHTML
+    console.log(skillName)
+
+    if (selectedSkills.includes(skillName)) {
+        selectedSkills.splice(selectedSkills.indexOf(skillName), 1)
+    } else {
+        selectedSkills.push(skillName)
+    }
+
+    div.classList.toggle("selected")
+}
+
 function generateProjectFilters (json) {
     let projectFilters = $("#projectFilters")
     let tagsList = json["tags"]
@@ -23,14 +39,17 @@ function generateProjectFilters (json) {
         // Build the skill from json data
         let skillName = Object.keys(tagsList[i])[0]
         let skillIcon = tagsList[i][skillName]
-        let skillID = "num-" + skillName.replace(/ /g, '-').toLowerCase()
+        let skillID = skillName.replace(/ /g, '-').toLowerCase()
         
         // Create the actual DOM element
         let skill = document.createElement("div")
         skill.innerHTML = `
-                        <img src="${skillIcon}" />
-                        <h2>${skillName}</h2>
-                        <p id="${skillID}"><span class="skillCount">0</span><span class="countLabel"> projects</span></p>`
+                        <img style="pointer-events:none;" src="${skillIcon}" />
+                        <h2 style="pointer-events:none;">${skillName}</h2>
+                        <p style="pointer-events:none;" id="num-${skillID}"><span class="skillCount">0</span><span class="countLabel"> projects</span></p>
+                        `
+        skill.style.userSelect = "none"
+        skill.onclick = filterProjects
         column.appendChild(skill)
     }
 }
