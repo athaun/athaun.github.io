@@ -14,7 +14,7 @@
             "tags" : ["Java", "OpenGL", "Team management", "Git"],                  
             "links" : [
                 {"GitHub" : "https://github.com/azurite-engine/Azurite"},
-                {"Project Link" : ""},
+                {"Link" : ""},
                 {"YouTube" : "https://youtu.be/FABUP0q9tHY"}
             ],
             "thumbnail" : "assets/thumbnails/azurite-engine-topdown.png"
