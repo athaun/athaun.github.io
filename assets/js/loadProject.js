@@ -87,7 +87,7 @@ function generateProjectList (json, initialSetup) {
             if (url != "") {
                 links += `
                 <a href="${url}" target="_blank">
-                <img src="assets/icons/${linkType}.png" alt="">
+                <img src="/assets/icons/${linkType}.png" alt="">
                 </a>
                 `
             }
