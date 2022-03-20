@@ -1,26 +1,23 @@
 { 
     "tags" : [
         {"Java" : "assets/icons/Java.png"},
-        {"C++" : "assets/icons/C Plus Plus.png"},
+        {"Cpp" : "assets/icons/C Plus Plus.png"},
         {"Javascript" : "assets/icons/Javascript.png"},
         {"Python" : "assets/icons/Python.png"},
         {"Web design" : "assets/icons/CSS3.png"},
-        {"Unity" : "assets/icons/Unity.png"},
-        {"C#" : "assets/icons/CS.png"},
-        {"OpenGL" : "assets/icons/Video Card.png"},
-        {"Linux" : "assets/icons/Linux.png"}
+        {"OpenGL" : "assets/icons/Video Card.png"}
     ],
     "projectList" : [
         {
             "name" : "Azurite Game Engine",
             "description" : "Azurite is an open source 2D java game engine built on LWJGL. I am the lead project manager of a team of international developers who contribute to the engine.",
-            "tags" : ["Java", "OpenGL", "Team management", "Git"],
+            "tags" : ["Java", "OpenGL", "Team management", "Git"],                  
             "links" : [
                 {"GitHub" : "https://github.com/azurite-engine/Azurite"},
                 {"Project Link" : ""},
-                {"YouTube" : ""}
+                {"YouTube" : "https://youtu.be/FABUP0q9tHY"}
             ],
-            "thumbnail" : "assets/thumbnails/azurite-engine.png"
+            "thumbnail" : "assets/thumbnails/azurite-engine-topdown.png"
         },
         {
             "name" : "Azurite Website",
@@ -32,6 +29,28 @@
                 {"YouTube" : ""}
             ],
             "thumbnail" : "assets/thumbnails/framed/azurite-engine.png"
+        },
+        {
+            "name" : "Multi client chat app",
+            "description" : "C++ chat application using sockets to broadcast messages sent by individual users to all other users via a server middleman. It was developed with a <a target='_blank' href='https://github.com/Echo82'>friend</a>.",
+            "tags" : ["C++", "Networking"],
+            "links" : [
+                {"GitHub" : "#"},
+                {"Link" : ""},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/chat-cpp.png"
+        },
+        {
+            "name" : "Multiplayer snake",
+            "description" : "A multiplayer snake game developed with a <a target='_blank' href='https://github.com/Echo82'>friend</a>. It utilises sockets to send player data between a client and server.",
+            "tags" : ["C++", "Networking"],
+            "links" : [
+                {"GitHub" : "#"},
+                {"Link" : ""},
+                {"YouTube" : "https://youtu.be/ErwMwx97KRE"}
+            ],
+            "thumbnail" : "assets/thumbnails/snake.png"
         },
         {
             "name" : "OurJSEditor.com",

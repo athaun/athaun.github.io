@@ -10,7 +10,7 @@ function generateProjectFilters (json) {
     let tagsList = json["tags"]
     
     // Make 3 columns and give them a unique ID
-    for (let i = 0; i < tagsList.length/3; i ++) {
+    for (let i = 0; i <= tagsList.length/3; i ++) {
         let column = document.createElement("div")
         column.classList.add("column")
         column.id = "col-" + i
@@ -22,6 +22,7 @@ function generateProjectFilters (json) {
     for (let i in tagsList) {
         // Find the column to append to
         let column = $("#col-" + (i%3))
+        
 
         // Build the skill from json data
         let skillName = Object.keys(tagsList[i])[0]
@@ -32,7 +33,7 @@ function generateProjectFilters (json) {
         let skill = document.createElement("div")
         skill.innerHTML = `
                         <img style="pointer-events:none;" src="${skillIcon}" />
-                        <h2 style="pointer-events:none;">${skillName}</h2>
+                        <h2 style="pointer-events:none;">${skillName.replace('pp', '++')}</h2>
                         <p style="pointer-events:none;" id="num-${skillID}"><span class="skillCount">0</span><span class="countLabel"> projects</span></p>
                         `
         skill.style.userSelect = "none"
@@ -45,9 +46,9 @@ function countTag (json, tag) {
     let tags = json["tags"]
     tag = tag.toLowerCase()
     for (let i in tags) {
-        if (tag == Object.keys(tags[i])[0].toLowerCase()) {
-            let count = $("#num-" + tag.replace(/ /g, '-')).querySelector(".skillCount")
-            let label = $("#num-" + tag.replace(/ /g, '-')).querySelector(".countLabel")
+        if (tag == Object.keys(tags[i])[0].toLowerCase().replace('pp', '++')) {
+            let count = $("#num-" + tag.replace(/ /g, '-').replace('++', 'pp')).querySelector(".skillCount")
+            let label = $("#num-" + tag.replace(/ /g, '-').replace('++', 'pp')).querySelector(".countLabel")
             count.innerHTML ++
 
             if (count.innerHTML == 1) {
