@@ -35,7 +35,7 @@ body{
     -webkit-background-clip: text;
     position:relative;
     text-align:center;
-    letter-spacing: -8px;
+    /* letter-spacing: -8px; */
     width: -moz-fit-content;
     width: fit-content;
     margin:0 auto;
@@ -55,7 +55,7 @@ body{
     background-position: 50% 50%;
     -webkit-background-clip: text;
     text-align:center;
-    letter-spacing: -0.4vw;
+    letter-spacing: -0.2vw;
     padding: 0px 10px;
     width: -moz-fit-content;
     width: fit-content;
@@ -239,6 +239,11 @@ div.projectsList > div > div:nth-child(2) > img {
 
 .projectsList a img {
     width: 40px;
+}
+
+.projectsList p a {
+    text-decoration: none;
+    color: #5753C6;
 }
 
 .projectsList .links {
