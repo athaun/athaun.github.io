@@ -82,12 +82,12 @@ function generateProjectList (json, initialSetup) {
         for (let j in p["links"]) {
             // If the URL isn't empty, add a link for it
             // I know it is hideous, it is grabbing the value (URL) without directly knowing the key (name)
-            let linkType = Object.keys(p["links"][j])[0].toLowerCase()
+            let linkType = Object.keys(p["links"][j])[0]
             let url = p["links"][j][linkType]
             if (url != "") {
                 links += `
                 <a href="${url}" target="_blank">
-                <img src="/assets/icons/${linkType}.png" alt="">
+                <img src="/assets/icons/${linkType.toLowerCase()}.png" alt="">
                 </a>
                 `
             }
