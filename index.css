@@ -129,15 +129,19 @@ main canvas {
 }
 
 #mainContent {
+    display: block;
     width: 80%;
     min-width: 800px;
     max-width: 1280px;
     z-index: -1 !important;
     height: 100vh;
+    left: 0;
     margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
     color: rgb(155, 154, 203);
+    
+
 
     /* transition: all 4.4s; */
 }
@@ -251,6 +255,86 @@ div.projectsList > div > div:nth-child(2) > img {
     position: absolute;
     bottom: 0;
     margin-bottom: 20px;
+}
+
+
+@media (max-width: 1200px) {
+    #mainContent {
+        width: 95%;
+    }
+
+    .title2 {
+        font-size: 7vh;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+
+    .projectsList > div {
+        flex-direction: column;
+    }
+    
+    .projectsList div > div:nth-child(1) {
+        padding-right: 0px;
+    }
+    
+    .projectsList a img {
+        width: 30px;
+        /* margin-right: 0px; */
+    }
+
+    .projectsList .links{
+
+        /* margin: auto auto; */
+        position: relative;
+        display: block;
+        margin-top: 10px;
+    }
+    
+}
+
+
+@media (max-width: 900px) {
+    #mainContent {
+        min-width: 0px;
+        max-width: 100%;
+    }
+
+    .row {
+        width: 100%;
+
+    }
+    
+    .column {
+        display: block;
+        width: 100%;
+        min-width: 94vw !important;
+        padding: 0 4px;
+    }
+    
+    .column div {
+        margin-top: 8px;
+        border-radius: 10px;
+        vertical-align: middle;
+        background: rgba(20, 20, 20);
+        border: 1px solid rgba(20, 20, 20);
+        padding: 20px;
+        color: #d3cee6;
+        text-align: left;
+        font-size: 17px;
+        transition: all 0.3s;
+    }
+
+    .title2 {
+        font-size: 5vh;
+    }
+}
+
+@media (max-width: 590px) {
+    .title2 {
+        font-size: 4vh;
+    }
 }
 
 .fadeIn {
