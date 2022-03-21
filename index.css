@@ -15,6 +15,10 @@ body{
     overflow-x: hidden;
 }
 
+* {
+    transition: all 0.3s;
+}
+
 .container {
     position:fixed;
     -webkit-transform: translate(-50%,-50%);
@@ -362,8 +366,9 @@ div.projectsList > div > div:nth-child(1) > ul {
 
 div.projectsList > div > div:nth-child(1) > ul > li {
     list-style: none;
-    border: 1px solid #5754C2;
-    color: #5754C2;
+    /* border: 1px solid #5754C2; */
+    background-color: #1e1e1e;
+    color: #6064AF;
     width: fit-content;
     padding: 5px;
     display: inline-block;
