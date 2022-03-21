@@ -274,22 +274,30 @@ div.projectsList > div > div:nth-child(2) > img {
     .projectsList > div {
         flex-direction: column;
     }
+
+    .projectsList h2 {
+        margin-top: 7px;
+    }
     
     .projectsList div > div:nth-child(1) {
         padding-right: 0px;
     }
     
     .projectsList a img {
-        width: 30px;
+        width: 35px;
         /* margin-right: 0px; */
     }
 
     .projectsList .links{
-
-        /* margin: auto auto; */
-        position: relative;
+        text-align: right;
+        /* border: 1px solid gray; */
+        height: 35px;
+        position: absolute;
         display: block;
-        margin-top: 10px;
+        top: 0px;
+        right: 0px;
+        margin-top: 20px;
+        margin-right: 12px;
     }
     
 }
