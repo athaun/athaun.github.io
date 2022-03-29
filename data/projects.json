@@ -31,6 +31,17 @@
             "thumbnail" : "assets/thumbnails/framed/azurite-engine.png"
         },
         {
+            "name" : "Cuda Influenza model",
+            "description" : "An agent-based influenza virus model examining the effects of cellular regeneration on cell-to-cell and cell-free viral transmission. This is research I am doing at TCU using GPU compute to accelerate the modeling of large viral simulations.",
+            "tags" : ["C++", "Nvidia Cuda", "Python"],
+            "links" : [
+                {"GitHub" : "https://github.com/athaun/cell-regen-influenza-model"},
+                {"Link" : ""},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/poster SRS.png"
+        },
+        {
             "name" : "Multi client chat app",
             "description" : "C++ chat application using sockets to broadcast messages sent by individual users to all other users via a server middleman. It was developed with a <a target='_blank' href='https://github.com/Echo82'>friend</a>.",
             "tags" : ["C++", "Networking"],
