@@ -9,15 +9,15 @@
     ],
     "projectList" : [
         {
-            "name" : "Azurite Game Engine",
-            "description" : "Azurite is an open source 2D java game engine built on LWJGL. I am the lead project manager of a team of international developers who contribute to the engine.",
-            "tags" : ["Java", "OpenGL", "Team management", "Git"],                  
+            "name" : "FABCC",
+            "description" : "FABCC is a resource for players of the card game Flesh and Blood where users can learn to play the game and buy custom built decks from the store. It is a NodeJS/Express based website with a simple Content Management System for administrators to publish pages and intigration with reflowhq to manage the store front.",
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],                
             "links" : [
-                {"GitHub" : "https://github.com/azurite-engine/Azurite"},
-                {"Link" : ""},
-                {"YouTube" : "https://youtu.be/FABUP0q9tHY"}
+                {"GitHub" : ""},
+                {"Link" : "https://fabcc.org"},
+                {"YouTube" : ""}
             ],
-            "thumbnail" : "assets/thumbnails/azurite-engine-topdown.png"
+            "thumbnail" : "assets/thumbnails/framed/fabcc.png"
         },
         {
             "name" : "Azurite Website",
@@ -31,8 +31,19 @@
             "thumbnail" : "assets/thumbnails/framed/azurite-engine.png"
         },
         {
+            "name" : "Azurite Game Engine",
+            "description" : "Azurite is an open source 2D java game engine built on LWJGL. I am the lead project manager of a team of international developers who contribute to the engine.",
+            "tags" : ["Java", "OpenGL", "Team management", "Git"],                  
+            "links" : [
+                {"GitHub" : "https://github.com/azurite-engine/Azurite"},
+                {"Link" : ""},
+                {"YouTube" : "https://youtu.be/FABUP0q9tHY"}
+            ],
+            "thumbnail" : "assets/thumbnails/azurite-engine-topdown.png"
+        },
+        {
             "name" : "Cuda Influenza model",
-            "description" : "An agent-based influenza virus model examining the effects of cellular regeneration on cell-to-cell and cell-free viral transmission. This is research I am doing at TCU using GPU compute to accelerate the modeling of large viral simulations.",
+            "description" : "An agent-based influenza virus model examining the effects of cellular regeneration on cell-to-cell and cell-free viral transmission. This is research I am doing at TCU using GPU compute to accelerate the modeling of large viral simulations. I have presented my findings at the TCU Student Research Symposium as well as a SIAM conference. The paper I co-wrote on my research is currently under review for the Journal of Theoretical Biology.",
             "tags" : ["C++", "Nvidia Cuda", "Python"],
             "links" : [
                 {"GitHub" : "https://github.com/athaun/cell-regen-influenza-model"},
@@ -95,17 +106,6 @@
                 {"YouTube" : ""}
             ],
             "thumbnail" : "assets/thumbnails/framed/chatapp.png"
-        },
-        {
-            "name" : "MyVariety IT Services",
-            "description" : "This is a mockup design I created for MyVariety IT in their efforts to redesign their landing page.",
-            "tags" : ["Web design"],
-            "links" : [
-                {"GitHub" : "https://github.com/athaun/MyVariety-Sitedesign"},
-                {"Link" : "https://athaun.tech/MyVariety-SiteDesign/"},
-                {"YouTube" : ""}
-            ],
-            "thumbnail" : "assets/thumbnails/framed/myvariety.png"
         }
     ]
 }
