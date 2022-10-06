@@ -86,17 +86,6 @@
             "thumbnail" : "assets/thumbnails/framed/ojse.png"
         },
         {
-            "name" : "Stock portfolio tracker",
-            "description" : "NodeJS/Express based website that queries the Finnhub stock API to display stock information and track the total gains/losses in a portfolio. The portfolio data is saved in MongoDB using Mongoose.",
-            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],
-            "links" : [
-                {"GitHub" : ""},
-                {"Link" : "http://stocks.athaun.tech/"},
-                {"YouTube" : ""}
-            ],
-            "thumbnail" : "assets/thumbnails/framed/stocks-app.png"
-        },
-        {
             "name" : "Flask/Socket IO Chat",
             "description" : "This is a Flask and socket.io based chat application. It supports multiple users and multiple rooms.",
             "tags" : ["Web design", "Javascript", "Python", "Flask", "Socket.io"],
