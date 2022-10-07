@@ -143,14 +143,32 @@ function generateProjectList (json, initialSetup) {
     }
 }
 
+let lastElem
+let recentlyDisabled
+
 function filterProjects (clickedSkill) {
     let div = clickedSkill.target
     let skillName = div.querySelector("h2").innerHTML
     div.classList.toggle("selected")
+    if (!div.classList.contains("selected")) {
+        recentlyDisabled = div
+        console.log("Added " + div + " to recently disabled list")
+        console.log(div)
+    }
+    if (lastElem) {
+        if(lastElem != div) {
+            if (lastElem != recentlyDisabled) {
+                lastElem.classList.toggle("selected")
+            }
+        }
+    }
+    lastElem = div
 
     if (selectedSkills.includes(skillName)) {
         selectedSkills.splice(selectedSkills.indexOf(skillName), 1)
     } else {
+        // Using an array because this used to allow filtering by multiple skills (changed to one at a time because of user feedback)
+        selectedSkills.pop()
         selectedSkills.push(skillName)
     }
 

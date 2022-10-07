@@ -5,16 +5,49 @@
         <title>Asher Haun</title>
         <link rel="stylesheet" href="index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="data/fontawesome/css/all.css" rel="stylesheet">
+        <!-- <link href="data/fontawesome/css/all.css" rel="stylesheet"> -->
     </head>
     <body>
         <div id="mainContent">
             <div id="contactPage" class="closed">
 
+                <form action="mailto:asher.haun01@utrgv.edu" method="get" enctype="text/plain">
+                    <h3>Contact me</h3>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Email Subject line.."></input>
+
+                    <label for="body">Body</label>
+                    <textarea id="body" name="body" placeholder="Write something.." style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+
+                <div>
+                    <a href="https://github.com/athaun" target="_blank">
+                        <img src="assets/icons/github.png" alt="github" width="50" height="50">
+                    </a>
+                    <a href="https://www.linkedin.com/in/athaun/" target="_blank">
+                        <img src="assets/icons/LinkedIn.png" alt="LinkedIn" width="50" height="50">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCnpDCSGDV1JUagiwNBxtbsA" target="_blank">
+                        <img src="assets/icons/youtube.png" alt="Youtube" width="50" height="50">
+                    </a>
+                </div>
             </div>
-            <!-- <button id="contactBubbleLink">
+            <button id="contactBubbleLink">
                 <img src="assets/icons/chat-purple.png" alt="Chat bubble"> <h3>Contact me</h3>
-            </button> -->
+                <!-- Contact form -->
+                
+            </button>
 
             <div>
                 <br>
@@ -30,7 +63,5 @@
         <script src="assets/js/loadProject.js"></script>
         <script src="assets/js/scroll.js"></script>
         <script src="assets/js/contact.js"></script>
-        <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script> -->
-        <!-- <script src="assets/js/sketch.js"></script> -->
     </body>
 </html>

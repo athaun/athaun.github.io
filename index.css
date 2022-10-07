@@ -397,6 +397,77 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     z-index: 4;
 }
 
+#contactBubbleLink {
+    box-shadow: 5px 5px 50px 1px rgba(0, 0, 0, 0.4);
+        background: rgb(23, 23, 23); /* #5357C8 */
+        border-radius: 50px;
+        color: #d3cee6;
+        text-decoration: none;
+        transition: all 0.25s ease;
+        border: 1px solid rgba(0, 0, 0, 0);
+}
+
+@media screen and (min-width: 901px) {
+    #contactBubbleLink {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 180px;
+        height: 60px;
+        margin: 35px;
+        padding: 10px;
+        z-index: 4;
+    }
+}
+
+#contactPage.open > *{
+    opacity: 1;
+}
+
+#contactPage form {
+    margin: 0 auto;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 70vh;
+    color: #D3CEE6;
+}
+
+#contactPage div a {
+    color: #6064AF;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+    #contactBubbleLink {
+        /* position: absolute; */
+
+        margin-top: 90vh !important;
+        width: 180px;
+        height: 60px;
+        margin: 35px;
+        padding: 10px;
+        
+        z-index: 4;
+        align-items: center;
+    }
+    
+    #contactPage > div {
+        margin: 10px auto;
+        display: flex;
+        width: fit-content;
+    }
+
+    #contactPage > div > a {
+        margin: 0;
+    }
+}
+
 #contactBubbleLink:hover {
     background: #1e1e21;
     border: 1px solid #5357C8;
@@ -428,6 +499,7 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     z-index: 3;
     border-radius: 50px;
 }
+
 #contactPage.closed {
     width: 180px;
     height: 60px;
@@ -435,6 +507,9 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     top: 0;
     left: 0;
     margin: 35px;
+}
+#contactPage.closed > *{
+    opacity: 0;
 }
 
 #contactPage.open {
@@ -447,6 +522,39 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     margin: 20px !important;
     /* margin: 0px; */
     /* border-radius: 0px; */
+}
+
+
+#contactPage input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #1E1E21;
+    background-color: #1E1E21;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: #D3CEE6;
+}
+
+#contactPage input[type=submit] {
+    background-color: #4E4CA8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+#contactPage input[type=submit]:hover {
+    background-color: #41408d;;
+}
+  
+#contactPage .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 
 body.nonscrollable {
