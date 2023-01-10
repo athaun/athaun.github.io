@@ -561,6 +561,10 @@ body.nonscrollable {
     overflow: hidden;
 }
 
+#contactPage > div {
+    margin-top: 20px;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 /* @media (max-width: 800px) {
     .column {

@@ -9,6 +9,28 @@
     ],
     "projectList" : [
         {
+            "name" : "Cuda Influenza model",
+            "description" : "An agent-based influenza viral model that examines the effects of cellular regeneration on viral transmission between cells. This model was developed for research I conducted for over three years at TCU. It uses GPU compute with Nvidia Cuda to accelerate the modeling of large viral simulations containing millions of cells. I have presented my findings at the TCU Student Research Symposium as well as the 2021 SIAM Conference on Computational Science and Engineering. I co-authored a <a target='_blank' href='https://doi.org/10.1016/j.jtbi.2022.111370'>paper</a> that has been published in the Journal of Theoretical Biology.",
+            "tags" : ["C++", "Nvidia Cuda", "Python"],
+            "links" : [
+                {"GitHub" : "https://github.com/athaun/cell-regen-influenza-model"},
+                {"Link" : "https://doi.org/10.1016/j.jtbi.2022.111370"},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/poster SRS.png"
+        },
+        {
+            "name" : "Azurite Game Engine",
+            "description" : "Azurite is an open source 2D java game engine built on LWJGL. I am the lead project manager of a team of international developers who contribute to the engine.",
+            "tags" : ["Java", "OpenGL", "Team management", "Git"],                  
+            "links" : [
+                {"GitHub" : "https://github.com/azurite-engine/Azurite"},
+                {"Link" : ""},
+                {"YouTube" : "https://youtu.be/FABUP0q9tHY"}
+            ],
+            "thumbnail" : "assets/thumbnails/azurite-engine-topdown.png"
+        },
+        {
             "name" : "FABCC",
             "description" : "FABCC is a resource for players of the card game Flesh and Blood where users can learn to play the game and buy custom built decks from the store. It is a NodeJS/Express based website with a simple Content Management System for administrators to publish pages and intigration with reflowhq to manage the store front.",
             "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],                
@@ -30,39 +52,7 @@
             ],
             "thumbnail" : "assets/thumbnails/framed/azurite-engine.png"
         },
-        {
-            "name" : "Azurite Game Engine",
-            "description" : "Azurite is an open source 2D java game engine built on LWJGL. I am the lead project manager of a team of international developers who contribute to the engine.",
-            "tags" : ["Java", "OpenGL", "Team management", "Git"],                  
-            "links" : [
-                {"GitHub" : "https://github.com/azurite-engine/Azurite"},
-                {"Link" : ""},
-                {"YouTube" : "https://youtu.be/FABUP0q9tHY"}
-            ],
-            "thumbnail" : "assets/thumbnails/azurite-engine-topdown.png"
-        },
-        {
-            "name" : "Cuda Influenza model",
-            "description" : "An agent-based influenza virus model examining the effects of cellular regeneration on cell-to-cell and cell-free viral transmission. This is research I am doing at TCU using GPU compute to accelerate the modeling of large viral simulations. I have presented my findings at the TCU Student Research Symposium as well as a SIAM conference. The paper I co-wrote on my research is currently under review for the Journal of Theoretical Biology.",
-            "tags" : ["C++", "Nvidia Cuda", "Python"],
-            "links" : [
-                {"GitHub" : "https://github.com/athaun/cell-regen-influenza-model"},
-                {"Link" : ""},
-                {"YouTube" : ""}
-            ],
-            "thumbnail" : "assets/thumbnails/poster SRS.png"
-        },
-        {
-            "name" : "Multi client chat app",
-            "description" : "C++ chat application using sockets to broadcast messages sent by individual users to all other users via a server middleman. It was developed with a <a target='_blank' href='https://github.com/Echo82'>friend</a>.",
-            "tags" : ["C++", "Networking"],
-            "links" : [
-                {"GitHub" : "#"},
-                {"Link" : ""},
-                {"YouTube" : ""}
-            ],
-            "thumbnail" : "assets/thumbnails/chat-cpp.png"
-        },
+        
         {
             "name" : "Multiplayer snake",
             "description" : "A multiplayer snake game developed with a <a target='_blank' href='https://github.com/Echo82'>friend</a>. It utilises sockets to send player data between a client and server.",
@@ -84,6 +74,17 @@
                 {"YouTube" : ""}
             ],
             "thumbnail" : "assets/thumbnails/framed/ojse.png"
+        },
+        {
+            "name" : "UKShopper",
+            "description" : "UKShopper is a website that allows users to search for products and compare prices across multiple UK retailers. It is a NodeJS/Express based website with a Content Management System for business owners to publish pages and products. Customers can create an account to post reviews and save products.",
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],                
+            "links" : [
+                {"GitHub" : ""},
+                {"Link" : "https://ukshopper.co.uk"},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/framed/ukshopper.png"
         },
         {
             "name" : "Flask/Socket IO Chat",
