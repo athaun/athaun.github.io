@@ -9,7 +9,18 @@
     ],
     "projectList" : [
         {
-            "name" : "Cuda Influenza model",
+            "name" : "UTRGV Math Student Reporting Software",
+            "description" : "This is application to automate grade reporting and presentation for calculus courses at UTRGV that use a complicated and non-standard learning target based grading system which can't be configured in Blackboard LMS. I have taken full ownership of the project, designing and implementing the database, backend, and frontend; I have managed project planning, development and DevOps myself from start to completion.",
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],
+            "links" : [
+                {"GitHub" : ""},
+                {"Link" : "https://mathreport.utrgv.edu"},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/utrgv-math.png"
+        },
+        {
+            "name" : "Cuda Influenza Simulation Model",
             "description" : "An agent-based influenza viral model that examines the effects of cellular regeneration on viral transmission between cells. This model was developed for research I conducted for over three years at TCU. It uses GPU compute with Nvidia Cuda to accelerate the modeling of large viral simulations containing millions of cells. I have presented my findings at the TCU Student Research Symposium as well as the 2021 SIAM Conference on Computational Science and Engineering. I co-authored a <a target='_blank' href='https://doi.org/10.1016/j.jtbi.2022.111370'>paper</a> that has been published in the Journal of Theoretical Biology.",
             "tags" : ["C++", "Nvidia Cuda", "Python"],
             "links" : [
@@ -29,6 +40,17 @@
                 {"YouTube" : "https://youtu.be/FABUP0q9tHY"}
             ],
             "thumbnail" : "assets/thumbnails/azurite-engine-topdown.png"
+        },
+        {
+            "name": "Multiplayer Chess",
+            "description": "A multiplayer chess game developed in <a target='_blank' href='azurite-engine.github.io'>my own engine</a>. It utilises sockets to send player data between a client and server and was made as a class project in my Object Oriented Programming with Java class.",
+            "tags": ["Java", "OpenGL", "Networking", "Team Development", "Git"],
+            "links": [
+                {"GitHub": "https://github.com/athaun/chess" },
+                {"Link": ""},
+                {"YouTube": "https://youtu.be/8Z2QX6Z3Z5o"}
+            ],
+            "thumbnail": "assets/thumbnails/chess.png"
         },
         {
             "name" : "FABCC",
@@ -92,7 +114,7 @@
             "tags" : ["Web design", "Javascript", "Python", "Flask", "Socket.io"],
             "links" : [
                 {"GitHub" : "https://github.com/athaun/Flask-chat"},
-                {"Link" : "http://chat.athaun.tech/"},
+                {"Link" : ""},
                 {"YouTube" : ""}
             ],
             "thumbnail" : "assets/thumbnails/framed/chatapp.png"
