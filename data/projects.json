@@ -9,20 +9,9 @@
     ],
     "projectList" : [
         {
-            "name" : "UTRGV Math Student Reporting Software",
-            "description" : "This is application to automate grade reporting and presentation for calculus courses at UTRGV that use a complicated and non-standard learning target based grading system which can't be configured in Blackboard LMS. I have taken full ownership of the project, designing and implementing the database, backend, and frontend; I have managed project planning, development and DevOps myself from start to completion.",
-            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],
-            "links" : [
-                {"GitHub" : ""},
-                {"Link" : "https://mathreport.utrgv.edu"},
-                {"YouTube" : ""}
-            ],
-            "thumbnail" : "assets/thumbnails/framed/utrgv-math.png"
-        },
-        {
             "name" : "Cuda Influenza Simulation Model",
             "description" : "An agent-based influenza viral model that examines the effects of cellular regeneration on viral transmission between cells. This model was developed for research I conducted for over three years at TCU. It uses GPU compute with Nvidia Cuda to accelerate the modeling of large viral simulations containing millions of cells. I have presented my findings at the TCU Student Research Symposium as well as the 2021 SIAM Conference on Computational Science and Engineering. I co-authored a <a target='_blank' href='https://doi.org/10.1016/j.jtbi.2022.111370'>paper</a> that has been published in the Journal of Theoretical Biology.",
-            "tags" : ["C++", "Nvidia Cuda", "Python"],
+            "tags" : ["C++", "Nvidia Cuda", "Python", "MatPlotLib", "Numpy", "Git"],
             "links" : [
                 {"GitHub" : "https://github.com/athaun/cell-regen-influenza-model"},
                 {"Link" : "https://doi.org/10.1016/j.jtbi.2022.111370"},
@@ -48,20 +37,64 @@
             "links": [
                 {"GitHub": "https://github.com/athaun/chess" },
                 {"Link": ""},
-                {"YouTube": "https://youtu.be/8Z2QX6Z3Z5o"}
+                {"YouTube": ""}
             ],
             "thumbnail": "assets/thumbnails/chess.jpg"
         },
+        {
+            "name" : "UTRGV Math Student Reporting Software",
+            "description" : "This is an application to automate grade reporting and presentation for calculus courses at UTRGV that use a complicated and non-standard learning target based grading system which can't be configured in Blackboard LMS. I have taken full ownership of the project, designing and implementing the database, backend, and frontend; I have managed project planning, development and DevOps myself from start to completion.",
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],
+            "links" : [
+                {"GitHub" : ""},
+                {"Link" : "https://mathreport.utrgv.edu"},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/framed/utrgv-math.png"
+        },
+        {
+            "name": "Haunted Halls of Google",
+            "description": "A 2D mini-rpg developed in <a target='_blank' href='azurite-engine.github.io'>my own engine</a>. It was made as a class project in only 11 hours (definitely not because I procrastinated). It features tilemaps, collision detection, and a simple enemies.",
+            "tags": ["Java", "OpenGL", "File Serialization", "Git"],
+            "links": [
+                {"GitHub": "https://github.com/athaun/escape_from_google" },
+                {"Link": ""},
+                {"YouTube": "https://youtu.be/JvHG-foe9pk"}
+            ],
+            "thumbnail": "assets/thumbnails/google-halls.png"
+        },
+        {
+            "name" : "Credit Inquiry Dispute Handling Application",
+            "description" : "This is a site I worked on during my Software Engineering Internship at General Motors Financial to handle credit inquiries and disputes. It is a .NET MVC based website with a custom built workflow system for call center employees to manage the dispute process.",
+            "tags" : ["Web design", "Javascript", "C#", ".NET MVC", "Oracle SQL", "Azure DevOps", "SCRUM/Agile"],                
+            "links" : [
+                {"GitHub" : ""},
+                {"Link" : ""},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/framed/gmf-site.png"
+        },     
         {
             "name" : "FABCC",
             "description" : "FABCC is a resource for players of the card game Flesh and Blood where users can learn to play the game and buy custom built decks from the store. It is a NodeJS/Express based website with a simple Content Management System for administrators to publish pages and intigration with reflowhq to manage the store front.",
             "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],                
             "links" : [
                 {"GitHub" : ""},
-                {"Link" : "https://fabcc.org"},
+                {"Link" : ""},
                 {"YouTube" : ""}
             ],
             "thumbnail" : "assets/thumbnails/framed/fabcc.png"
+        },
+        {
+            "name": "Not Hotdog? (Image Classification)",
+            "description": "Is it a hot dog? This project was made during the first annual frontera hacks hackathon. The inspiration was from the silicon valley (TV show) hot dog or not hot dog app. We learned to never to try setting up a ML environment in 24 hours. The app featured a very professional UI and could classify wether an image was a Hotdog or not with approximately a 60% accuracy. I am happy with that result given the time constraints and the fact that we had to train the model from scratch without any prior experience.",
+            "tags": ["Python", "Tensorflow", "MatPlotLib", "Numpy", "Node", "HTML & CSS"],
+            "links": [
+                {"GitHub": "https://github.com/athaun/not_hotdog" },
+                {"Link": "https://devpost.com/software/not-hotdog-xg84s2"},
+                {"YouTube": "https://youtu.be/ACmydtFDTGs"}
+            ],
+            "thumbnail": "assets/thumbnails/hotdog.png"
         },
         {
             "name" : "Azurite Website",
@@ -73,8 +106,7 @@
                 {"YouTube" : ""}
             ],
             "thumbnail" : "assets/thumbnails/framed/azurite-engine.png"
-        },
-        
+        },         
         {
             "name" : "Multiplayer snake",
             "description" : "A multiplayer snake game developed with a <a target='_blank' href='https://github.com/Echo82'>friend</a>. It utilises sockets to send player data between a client and server.",
@@ -103,10 +135,21 @@
             "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],                
             "links" : [
                 {"GitHub" : ""},
-                {"Link" : "https://ukshopper.co.uk"},
+                {"Link" : ""},
                 {"YouTube" : ""}
             ],
             "thumbnail" : "assets/thumbnails/framed/ukshopper.png"
+        },
+        {
+            "name" : "Stock portfolio tracker",
+            "description" : "NodeJS/Express based website that queries the Finnhub stock API to display stock information and track the total gains/losses in a portfolio. The portfolio data is saved in MongoDB using Mongoose.",
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],
+            "links" : [
+                {"GitHub" : "https://github.com/athaun/Stock-portfolio-tracker"},
+                {"Link" : ""},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/framed/stocks-app.png"
         },
         {
             "name" : "Flask/Socket IO Chat",
