@@ -17,7 +17,7 @@
                 {"Link" : "https://mathreport.utrgv.edu"},
                 {"YouTube" : ""}
             ],
-            "thumbnail" : "assets/thumbnails/utrgv-math.png"
+            "thumbnail" : "assets/thumbnails/framed/utrgv-math.png"
         },
         {
             "name" : "Cuda Influenza Simulation Model",
@@ -50,7 +50,7 @@
                 {"Link": ""},
                 {"YouTube": "https://youtu.be/8Z2QX6Z3Z5o"}
             ],
-            "thumbnail": "assets/thumbnails/chess.png"
+            "thumbnail": "assets/thumbnails/chess.jpg"
         },
         {
             "name" : "FABCC",
