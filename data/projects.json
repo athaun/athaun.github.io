@@ -31,6 +31,28 @@
             "thumbnail" : "assets/thumbnails/nutron-poster.jpg"
         },
         {
+            "name" : "Voxel Graphics Engine",
+            "description" : "For my senior capstone project, I am building a high performance voxel engine. The goal for this engine is to enable game development in an engine that can handle large, procedurally generated worlds with fully modifiable terrain. We are designing the engine with performance in mind, and experimenting with different optimization techniques so that we can display our findings to faculty and students during the final presentation.",
+            "tags" : ["C++", "BGFX", "Graphics Programming", "Git"],                  
+            "links" : [
+                {"GitHub" : "https://github.com/athaun/voxel-engine"},
+                {"Link" : ""},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/voxel_poster.png"
+        },
+        {
+            "name" : "Stellar Assault - Unity Game",
+            "description" : "Stellar Assault is a space based RTS game built in Unity. You must strategically place and direct your ships to defend your space station against ever increasing waves of pirate ships.",
+            "tags" : ["C#", "Unity", "Git", "Game Dev"],                  
+            "links" : [
+                {"GitHub" : "https://github.com/athaun/stellar_assault_rts"},
+                {"Link" : ""},
+                {"YouTube" : "https://www.youtube.com/watch?v=CaaYjlInES8&list=PLpSr3vcgQMljAOoeYAyBnVxJagsmv9WAC&index=7"}
+            ],
+            "thumbnail" : "assets/thumbnails/stellar_assault.png"
+        },
+        {
             "name" : "Azurite Game Engine",
             "description" : "Azurite is an open source 2D java game engine built on LWJGL. I am the lead project manager of a team of international developers who contribute to the engine.",
             "tags" : ["Java", "OpenGL", "Team management", "Git"],                  
