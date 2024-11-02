@@ -5,7 +5,7 @@
         {"Javascript" : "assets/icons/Javascript.png"},
         {"Python" : "assets/icons/Python.png"},
         {"Web design" : "assets/icons/CSS3.png"},
-        {"Graphics Programming" : "assets/icons/Video Card.png"}
+        {"Graphics" : "assets/icons/Video Card.png"}
     ],
     "projectList" : [
         {
@@ -33,7 +33,7 @@
         {
             "name" : "Voxel Graphics Engine",
             "description" : "For my senior capstone project, I am building a high performance voxel engine. The goal for this engine is to enable game development in an engine that can handle large, procedurally generated worlds with fully modifiable terrain. We are designing the engine with performance in mind, and experimenting with different optimization techniques so that we can display our findings to faculty and students during the final presentation.",
-            "tags" : ["C++", "BGFX", "Graphics Programming", "Git"],                  
+            "tags" : ["C++", "BGFX", "Graphics", "Git"],                  
             "links" : [
                 {"GitHub" : "https://github.com/athaun/voxel-engine"},
                 {"Link" : ""},
@@ -55,7 +55,7 @@
         {
             "name" : "Azurite Game Engine",
             "description" : "Azurite is an open source 2D java game engine built on LWJGL. I am the lead project manager of a team of international developers who contribute to the engine.",
-            "tags" : ["Java", "Graphics Programming", "Team management", "Git"],                  
+            "tags" : ["Java", "Graphics", "Team management", "Git"],                  
             "links" : [
                 {"GitHub" : "https://github.com/azurite-engine/Azurite"},
                 {"Link" : "https://azurite-engine.github.io/"},
@@ -66,7 +66,7 @@
         {
             "name": "Multiplayer Chess",
             "description": "A multiplayer chess game developed in <a target='_blank' href='azurite-engine.github.io'>my own engine</a>. It utilises sockets to send player data between a client and server and was made as a class project in my Object Oriented Programming with Java class.",
-            "tags": ["Java", "Graphics Programming", "Networking", "Team Development", "Git"],
+            "tags": ["Java", "Graphics", "Networking", "Team Development", "Git"],
             "links": [
                 {"GitHub": "https://github.com/athaun/chess" },
                 {"Link": ""},
@@ -88,7 +88,7 @@
         {
             "name": "Haunted Halls of Google",
             "description": "A 2D mini-rpg developed in <a target='_blank' href='azurite-engine.github.io'>my own engine</a>. It was made as a class project in only 11 hours (definitely not because I procrastinated). It features tilemaps, collision detection, and a simple enemies.",
-            "tags": ["Java", "Graphics Programming", "File Serialization", "Git"],
+            "tags": ["Java", "Graphics", "File Serialization", "Git"],
             "links": [
                 {"GitHub": "https://github.com/athaun/escape_from_google" },
                 {"Link": ""},

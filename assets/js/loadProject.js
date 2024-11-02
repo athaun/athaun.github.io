@@ -62,12 +62,12 @@ function countTag (json, tag) {
 }
 
 function generateProjectList (json, initialSetup) {
-    let projectsParent = $("#mainContent > div.projectsList")
+    let projectsParent = $(".mainContent > div.projectsList")
     let projects = json["projectList"]
 
     let projectsDisplayed = 0
     let displayCount = document.createElement("h4")
-    displayCount.innerText = "Select a skill to filter projects"
+    // displayCount.innerText = "Select a skill to filter projects"
     displayCount.id = "displayCount"
     projectsParent.appendChild(displayCount)
 
@@ -136,7 +136,6 @@ function generateProjectList (json, initialSetup) {
     }
 
     if (selectedSkills.length != 0) {
-        displayCount.innerText = `Showing ${projectsDisplayed} project` + (projectsDisplayed != 1 ? "s" : "")
         if (projectsDisplayed == 0) {
             displayCount.innerText = "Nothing to see here for now."
         }

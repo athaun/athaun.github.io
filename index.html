@@ -8,61 +8,95 @@
         <!-- <link href="data/fontawesome/css/all.css" rel="stylesheet"> -->
     </head>
     <body>
-        <div id="mainContent">
-            <div id="contactPage" class="closed">
-
-                <form action="mailto:asher.haun01@utrgv.edu" method="get" enctype="text/plain">
-                    <h3>Contact me</h3>
-                    <!--
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Email">
-                    -->
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Email Subject line.."></input>
-
-                    <label for="body">Body</label>
-                    <textarea id="body" name="body" placeholder="Write something.." style="height:200px"></textarea>
-
-                    <input type="submit" value="Send Email">
-                </form>
-
-                <div>
-                    <a href="https://github.com/athaun" target="_blank">
-                        <img src="assets/icons/github.png" alt="github" width="50" height="50">
-                    </a>
-                    <a href="https://www.linkedin.com/in/athaun/" target="_blank">
-                        <img src="assets/icons/LinkedIn.png" alt="LinkedIn" width="50" height="50">
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCnpDCSGDV1JUagiwNBxtbsA" target="_blank">
-                        <img src="assets/icons/youtube.png" alt="Youtube" width="50" height="50">
-                    </a>
-                </div>
+        <nav id="navbar">
+            <div class="brand">Asher Haun</div>
+            <div class="links">
+                <!-- <a href="#" data-target="about">About Me</a> -->
+                <a href="#" data-target="experience">Experience</a>
+                <a href="#" data-target="projects">Projects</a>
+                <a href="#" data-target="publications">Publications</a>
+                <a href="#" data-target="contact">
+                    Follow & Contact
+                </a>
             </div>
-            <button id="contactBubbleLink">
-                <img src="assets/icons/chat-purple.png" alt="Chat bubble"> <h3>Contact me</h3>
-                <!-- Contact form -->
-                
-            </button>
+        </nav>
 
+        <!-- <div class="mainContent active" id="about">
+            <h3 class="title">About me</h3>
+            <h4>Select any tile to filter projects by category.</h4>
+            <br>
+        </div> -->
+
+        <div class="mainContent" id="experience">
+            <h3 class="title">My Experience</h3>
+            <br>
+            <div class="experienceList"></div>
+            <br>
+        </div>
+
+        <div class="mainContent active" id="projects">          
+            
             <div>
-                <br>
-                <h1 class="title2">My Projects</h1>
+                <h3 class="title">My Projects</h3>
+                <h4>Select any tile to filter projects by category.</h4>
                 <br>
                 <div class="row" id="projectFilters"></div>
             </div>
 
             <div class="projectsList"></div>
         </div>
+
+        <div id="publications" class="mainContent">
+            <h3 class="title">My Publications and Posters</h3>
+            <br>
+            <div class="publicationsList"></div>
+        </div>
+
+        <div class="mainContent" id="contact">
+            <div id="contactPage" class="closed">
+
+            <br>
+                <div class="contactList">
+                    <div class="card">
+                        <a href="https://github.com/athaun" target="_blank">
+                            <img src="assets/icons/github.png" alt="github" width="50" height="50">
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.linkedin.com/in/athaun/" target="_blank">
+                            <img src="assets/icons/LinkedIn.png" alt="LinkedIn" width="50" height="50">
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://orcid.org/0000-0002-2821-6263" target="_blank">
+                            <img src="assets/icons/link.png" alt="Orcid" width="50" height="50">
+                            <span>ORCID</span>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://www.youtube.com/channel/UCnpDCSGDV1JUagiwNBxtbsA" target="_blank">
+                            <img src="assets/icons/youtube.png" alt="Youtube" width="50" height="50">
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="https://discordapp.com/users/347183071449186308" target="_blank">
+                            <img src="assets/icons/discord.png" alt="Discord" width="50" height="50">
+                            <span>Discord</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <br>
         
         <script src="assets/js/loadProject.js"></script>
         <script src="assets/js/scroll.js"></script>
         <script src="assets/js/contact.js"></script>
+        <script src="assets/js/pageSwitcher.js"></script>
+        <script src="assets/js/loadExperience.js"></script>
+        <script src="assets/js/loadPublications.js"></script>
     </body>
 </html>
