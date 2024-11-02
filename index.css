@@ -32,9 +32,6 @@ body{
 .row {
     display: flex;
     flex-wrap: wrap;
-    /* padding: 0 4px; */
-    /* max-width: 1920px; */
-    /* margin: 0 auto; */
 }
 
 /* Create four equal columns that sits next to each other */
@@ -273,17 +270,6 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     font-weight: 700;
 }
 
-#contactPage form {
-    margin: 0 auto;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    height: 70vh;
-    color: #D3CEE6;
-}
-
 #contactPage div a {
     color: #6064AF;
     padding: 10px;
@@ -292,74 +278,6 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     text-decoration: none;
 }
 
-#contactPage.open {
-    width: calc(100%);
-    height: calc(100%);
-    background: rgb(20, 20, 20);
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 0px !important;
-    /* margin: 0px; */
-    /* border-radius: 0px; */
-}
-
-
-#contactPage input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #1E1E21;
-    background-color: #1E1E21;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    color: #D3CEE6;
-}
-
-#contactPage input[type=submit] {
-    background-color: #4E4CA8;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-  
-#contactPage input[type=submit]:hover {
-    background-color: #41408d;;
-}
-  
-#contactPage .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
-
-body.nonscrollable {
-    overflow: hidden;
-}
-
-#contactPage > div {
-    margin-top: 20px;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-/* @media (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-} */
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-/* @media (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-} */
 
 /* Navbar styles */
 #navbar {
@@ -413,7 +331,6 @@ body.nonscrollable {
     color: #a250c8;
 }
 
-/* Responsive styles */
 @media (max-width: 900px) {
     #navbar {
         height: 100px;
@@ -435,15 +352,7 @@ body.nonscrollable {
 
 .title {
     font-size: 2.4vh;
-    /* font-weight: 600; */
     color: #d3cee6;
-    /* background-color: #4158D0; */
-    /* background-image: linear-gradient(43deg, #4158D0 0%, #a250c8 100%);
-    background-size: 100%;
-    background-position: 50% 50%;
-    -webkit-background-clip: text;
-    letter-spacing: -0.1vw; */
-    /* padding: 4px; */
     width: -moz-fit-content;
     width: fit-content;
     margin: 4px;
@@ -453,7 +362,6 @@ body.nonscrollable {
 .mainContent h4 {
     color: #9996a5;
     margin: 4px;
-    /* margin-left: 5px; */
 }
 
 .mainContent {
@@ -471,10 +379,10 @@ body.nonscrollable {
     visibility: hidden;
     transition: opacity 0.5s ease, visibility 0.5s ease;
     position: absolute;
-    width: 80%; /* Set width to 80% */
-    top: 50%; /* Position top at 50% */
-    left: 50%; /* Position left at 50% */
-    transform: translate(-50%, -50%); /* Center the element */
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 1;
 }
 
@@ -509,14 +417,12 @@ body.nonscrollable {
     margin: 4px;
     margin-bottom: 30px;
     color: #d3cee6;
-    overflow: hidden; /* Ensure content doesn't overflow */
+    overflow: hidden;
 }
 
 .card-header {
     display: grid;
-    grid-template-columns: auto 1fr; /* Two columns: auto for image, 1fr for text */
-    /* align-items: center; */
-    /* margin-bottom: 8px; */
+    grid-template-columns: auto 1fr;
 }
 
 .card h3 {
@@ -533,7 +439,7 @@ body.nonscrollable {
 .card ul {
     color: #d3cee6;
     list-style-type: disc;
-    padding-left: 20px; /* Adjust padding for list */
+    padding-left: 20px;
     line-height: 1.9;
     margin-bottom: 0px;
 }
