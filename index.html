@@ -5,27 +5,33 @@
         <title>Asher Haun</title>
         <link rel="stylesheet" href="index.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link href="data/fontawesome/css/all.css" rel="stylesheet"> -->
     </head>
     <body>
         <nav id="navbar">
             <div class="brand">Asher Haun</div>
+            <button class="mobile-menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="links">
-                <!-- <a href="#" data-target="about">About Me</a> -->
                 <a href="#" data-target="experience">Experience</a>
                 <a href="#" data-target="projects">Projects</a>
                 <a href="#" data-target="publications">Publications</a>
-                <a href="#" data-target="contact">
-                    Follow & Contact
-                </a>
+                <a href="#" data-target="contact">Follow & Contact</a>
             </div>
         </nav>
 
-        <!-- <div class="mainContent active" id="about">
-            <h3 class="title">About me</h3>
-            <h4>Select any tile to filter projects by category.</h4>
-            <br>
-        </div> -->
+        <div class="landing-page active" id="home">
+            <div class="landing-content">
+                <h1 class="gradient-text">Asher Haun</h1>
+                <p class="subtitle">Software Engineer & Researcher</p>
+                <div class="scroll-indicator">
+                    <span>Explore My Work</span>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </div>
 
         <div class="mainContent" id="experience">
             <h3 class="title">My Experience</h3>
@@ -100,5 +106,6 @@
         <script src="assets/js/pageSwitcher.js"></script>
         <script src="assets/js/loadExperience.js"></script>
         <script src="assets/js/loadPublications.js"></script>
+        <script src="assets/js/navigation.js"></script>
     </body>
 </html>
