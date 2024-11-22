@@ -81,12 +81,13 @@ const hideLandingPage = () => {
     const landingPage = document.querySelector('.landing-page');
     landingPage.classList.add('scrolling-out');
 
-    // Allow scrolling only after a slight delay (e.g., 200ms after transition ends)
     setTimeout(() => {
         landingPage.style.display = 'none';
+        window.scrollTo(0, 0);
         setTimeout(() => {
             document.body.classList.remove('no-scroll');
-        }, 100); // Delay to ensure smooth experience
+            window.scrollTo(0, 0);
+        }, 100);
     }, 700); // Match the transition duration
 };
 

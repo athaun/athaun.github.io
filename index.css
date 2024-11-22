@@ -130,10 +130,6 @@ div.projectsList > div > div:nth-child(2) > img {
 
 
 @media (max-width: 1200px) {
-    .mainContent {
-        width: 95%;
-    }
-
     .title2 {
         font-size: 7vh;
     }
@@ -432,7 +428,6 @@ div.projectsList > div > div:nth-child(1) > ul > li {
 .mainContent {
     text-align: left;
     display: block;
-    width: 80%;
     min-width: 800px;
     max-width: 1280px;
     color: rgb(155, 154, 203);
@@ -468,6 +463,18 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     .mainContent {
         min-width: 0px;
         max-width: 100%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .mainContent {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mainContent {
+        width: 93%;
     }
 }
 
@@ -527,6 +534,12 @@ div.projectsList > div > div:nth-child(1) > ul > li {
     height: 70px;
     border-radius: 10px;
     margin-right: 20px;
+}
+
+@media (max-width: 800px) {
+    .company-logo {
+        display: none;
+    }
 }
 
 
