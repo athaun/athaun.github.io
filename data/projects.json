@@ -112,7 +112,7 @@
             "description" : "FABCC is a resource for players of the card game Flesh and Blood where users can learn to play the game and buy custom built decks from the store. It is a NodeJS/Express based website with a simple Content Management System for administrators to publish pages and intigration with reflowhq to manage the store front.",
             "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],                
             "links" : [
-                {"GitHub" : ""},
+                {"GitHub" : "https://github.com/athaun/fabcc"},
                 {"Link" : ""},
                 {"YouTube" : ""}
             ],
@@ -178,7 +178,7 @@
             "description" : "NodeJS/Express based website that queries the Finnhub stock API to display stock information and track the total gains/losses in a portfolio. The portfolio data is saved in MongoDB using Mongoose.",
             "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],
             "links" : [
-                {"GitHub" : "https://github.com/athaun/Stock-portfolio-tracker"},
+                {"GitHub" : "https://github.com/athaun/stock_portfolio_tracker"},
                 {"Link" : ""},
                 {"YouTube" : ""}
             ],
