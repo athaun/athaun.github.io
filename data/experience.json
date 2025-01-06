@@ -6,23 +6,23 @@
         "duration": "Summer 2024",
         "type": "Internship",
         "description": [
-            "Developed safety-critical software in support of nuclear energy research at the Materials and Fuels Complex.",
-            "Used Ruby on Rails and Typescript with Angular in a split architecture web application.",
-            "Built complex features, fixed bugs, participated in beta testing, customer support and the application release cycle."
+            "Developed safety-critical software to track nuclear materials supporting nuclear energy research.",
+            "Built complex features, fixed bugs, participated in beta testing, customer support and the application release cycle.",
+            "Employed Ruby on Rails and Typescript with Angular in a split architecture web application."
         ],
         "logo": "../assets/logos/inl.jfif"
     },
     {
-        "company": "UTRGV",
+        "company": "UT Rio Grande Valley",
         "link": "https://www.utrgv.edu",
         "position": "Software Engineer",
         "duration": "2022-2024",
         "type": "Contract",
         "description": [
-            "Architect and developer of an application designed to enhance progress reporting.",
-            "Tailored to accommodate a unique learning target-based grading system.",
+            "Architected and developed application designed to enhance progress reports for a unique target-based grading system.",
+            "Streamlined experience for both professors and students, saving hundreds of hours each week spent calculating reports manually.",
             "Used JavaScript, MongoDB, Linux and software engineering practices.",
-            "Streamlined experience for both professors and students, saving dozens of hours each week."
+            "Responsible for application architecture, design, development, server operation and testing."
         ],
         "logo": "../assets/logos/utrgv.jfif"
     },
@@ -33,38 +33,36 @@
         "duration": "Summer 2023",
         "type": "Internship",
         "description": [
-            "Contributed to the development of innovative solutions for General Motors Financial.",
-            "Focused on the creation of internal credit inquiry applications.",
-            "Developed new reporting processes using C# and SQL.",
-            "Demonstrated leadership within my team by facilitating daily SCRUM standups and ceremonies."
+            "Developed new reporting system using .NET and SQL automating daily manual processes.",
+            "Built features for credit inquiry application front and back ends using .NET, HTML and CSS.",
+            "Demonstrated leadership within team by facilitating daily SCRUM standups and ceremonies."
         ],
         "logo": "../assets/logos/gmf.jfif"
     },
     {
-        "company": "UTRGV",
+        "company": "UT Rio Grande Valley",
         "link": "https://www.utrgv.edu",
         "position": "Research Assistant",
         "duration": "2022-2024",
         "type": "Volunteer",
         "description": [
-            "Dedicated research efforts to the Algorithmic Self-Assembly Research (ASARG) Lab.",
-            "Participating in research on Tile Automata (TA) and Chemical Reaction Network models (CRNs).",
-            "Investigating problems in the theory of computer science, computability and software modeling.",
-            "Given responsibility as the primary maintainer of the software for our TA model using Python."
+            "Developed high performance C++ simulator for self-building fractals in Tile Automata.",
+            "Researched computability in Tile Automata (TA) and Chemical Reaction Networks (CRNs).",
+            "Edited and published research articles and posters; presented at symposia and conferences."
         ],
         "logo": "../assets/logos/utrgv.jfif"
     },
     {
-        "company": "TCU",
+        "company": "Texas Christian University",
         "link": "https://www.tcu.edu",
         "position": "Research Apprentice",
         "duration": "2019-2023",
         "type": "Volunteer",
         "description": [
-            "Engaged in the development of C++/Cuda models to simulate the spread of the Influenza virus within cellular tissue.",
-            "Used Python, numpy and matplotlib to process and analyze large amounts of simulation data.",
-            "Presented research findings at the 2021 SIAM Conference on Computational Science and Engineering, by invitation to the NSF Inaugural Equity in Engineering Summit.",
-            "Published findings in the peer-reviewed Journal of Theoretical Biology as first author."
+            "Developed C++ and Nvidia Cuda model to simulate the spread of Influenza within cellular tissue.",
+            "Published findings as first author in the peer-reviewed Journal of Theoretical Biology.",
+            "Used Python, numpy and matplotlib to process and statistically analyze simulation data.",
+            "Presented research findings at the 2021 SIAM Conference on Computational Science and Engineering, presented by invitation to the NSF Inaugural Equity in Engineering Summit."
         ],
         "logo": "../assets/logos/tcu.jfif"
     },
@@ -75,8 +73,7 @@
         "duration": "Summer 2022",
         "type": "Paid",
         "description": [
-            "Web development and design for various clients, utilizing MongoDB, Express, Node.JS, and Bootstrap.",
-            "Back-end development, API and database configuration and front-end design."
+            "Custom web development and design for clients using MongoDB, Express, and Node, utilizing MongoDB, Express, Node.JS, and Bootstrap."
         ],
         "logo": ""
     }
