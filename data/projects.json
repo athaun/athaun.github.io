@@ -1,4 +1,4 @@
-{ 
+ 
     "tags" : [
         {"Java" : "assets/icons/Java.png"},
         {"Cpp" : "assets/icons/C Plus Plus.png"},
@@ -39,7 +39,7 @@
                 {"Link" : ""},
                 {"YouTube" : ""}
             ],
-            "thumbnail" : "assets/thumbnails/voxel_poster.png"
+            "thumbnail" : "assets/thumbnails/digbuild.png"
         },
         {
             "name" : "Stellar Assault - Unity Game",
