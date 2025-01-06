@@ -146,7 +146,7 @@
             "description" : "A multiplayer snake game developed with a <a target='_blank' href='https://github.com/Echo82'>friend</a>. It utilises sockets to send player data between a client and server.",
             "tags" : ["C++", "Networking"],
             "links" : [
-                {"GitHub" : "#"},
+                {"GitHub" : "https://github.com/athaun/Snake-Terminal-Game"},
                 {"Link" : ""},
                 {"YouTube" : "https://youtu.be/ErwMwx97KRE"}
             ],
