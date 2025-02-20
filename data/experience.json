@@ -6,9 +6,8 @@
         "duration": "Summer 2024",
         "type": "Internship",
         "description": [
-            "Developed safety-critical software to track nuclear materials supporting nuclear energy research.",
-            "Built complex features, fixed bugs, participated in beta testing, customer support and the application release cycle.",
-            "Employed Ruby on Rails and Typescript with Angular in a split architecture web application."
+            "Implemented complex features, fixed bugs, participated in beta testing, customer support and the application release cycle to track nuclear materials.",
+            "Employed Ruby on Rails and Typescript with Angular in a split architecture application.",
         ],
         "logo": "../assets/logos/inl.jfif"
     },
@@ -19,10 +18,8 @@
         "duration": "2022-2024",
         "type": "Contract",
         "description": [
-            "Architected and developed application designed to enhance progress reports for a unique target-based grading system.",
-            "Streamlined experience for both professors and students, saving hundreds of hours each week spent calculating reports manually.",
-            "Used JavaScript, MongoDB, Linux and software engineering practices.",
-            "Responsible for application architecture, design, development, server operation and testing."
+            "Designed and developed an application to streamline grading system for professors and students saving hundreds of hours each week by automating reports. Chose JavaScript and MongoDB for their large developer base and future maintainability.",
+            "Responsible for application requirements, design, development, installation and testing.",
         ],
         "logo": "../assets/logos/utrgv.jfif"
     },
@@ -33,9 +30,8 @@
         "duration": "Summer 2023",
         "type": "Internship",
         "description": [
-            "Developed new reporting system using .NET and SQL automating daily manual processes.",
-            "Built features for credit inquiry application front and back ends using .NET, HTML and CSS.",
-            "Demonstrated leadership within team by facilitating daily SCRUM standups and ceremonies."
+            "Gathered requirements for reporting system to automate manual processes. ",
+            "Developed features for credit inquiry application front end and back end using .NET and SQL."
         ],
         "logo": "../assets/logos/gmf.jfif"
     },
@@ -46,7 +42,7 @@
         "duration": "2022-2024",
         "type": "Volunteer",
         "description": [
-            "Developed high performance C++ simulator for self-building fractals in Tile Automata.",
+            "Developing a performance focused, C++ and Vulkan GPGPU simulator.",
             "Researched computability in Tile Automata (TA) and Chemical Reaction Networks (CRNs).",
             "Edited and published research articles and posters; presented at symposia and conferences."
         ],
@@ -59,9 +55,9 @@
         "duration": "2019-2023",
         "type": "Volunteer",
         "description": [
-            "Developed C++ and Nvidia Cuda model to simulate the spread of Influenza within cellular tissue.",
+            "Part of a team that developed a massively parallel C++ and Nvidia Cuda simulation, achieving a 7,000 times speedup compared to the legacy python model.",
             "Published findings as first author in the peer-reviewed Journal of Theoretical Biology.",
-            "Used Python, numpy and matplotlib to process and statistically analyze simulation data.",
+            "Created Python tools using numpy and matplotlib to statistically analyze terabytes of simulation data.",
             "Presented research findings at the 2021 SIAM Conference on Computational Science and Engineering, presented by invitation to the NSF Inaugural Equity in Engineering Summit."
         ],
         "logo": "../assets/logos/tcu.jfif"
@@ -73,7 +69,7 @@
         "duration": "Summer 2022",
         "type": "Paid",
         "description": [
-            "Custom web development and design for clients using MongoDB, Express, and Node, utilizing MongoDB, Express, Node.JS, and Bootstrap."
+            "Built custom web applications to meet specific customer requirements, focusing on responsive design and optimal user experience. Demonstrated ability to deliver complete solutions from concept to deployment."
         ],
         "logo": ""
     }
