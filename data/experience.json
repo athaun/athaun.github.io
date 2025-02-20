@@ -7,7 +7,7 @@
         "type": "Internship",
         "description": [
             "Implemented complex features, fixed bugs, participated in beta testing, customer support and the application release cycle to track nuclear materials.",
-            "Employed Ruby on Rails and Typescript with Angular in a split architecture application.",
+            "Employed Ruby on Rails and Typescript with Angular in a split architecture application."
         ],
         "logo": "../assets/logos/inl.jfif"
     },
@@ -19,7 +19,7 @@
         "type": "Contract",
         "description": [
             "Designed and developed an application to streamline grading system for professors and students saving hundreds of hours each week by automating reports. Chose JavaScript and MongoDB for their large developer base and future maintainability.",
-            "Responsible for application requirements, design, development, installation and testing.",
+            "Responsible for application requirements, design, development, installation and testing."
         ],
         "logo": "../assets/logos/utrgv.jfif"
     },
