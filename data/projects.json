@@ -65,6 +65,17 @@
             "thumbnail" : "assets/thumbnails/azurite-engine-topdown.png"
         },
         {
+            "name" : "Autotile",
+            "description" : "Autotile is a Tile Automata simulator built in C++ and Vulkan Compute. This simulator is designed with performance in mind for large systems so that the self building fractals and intrinsic univerality systems designed by the ASARG lab may be demonstrated in real time--something which the legacy Python simulator fails to do.",
+            "tags" : ["C++", "Graphics", "Vulkan GPGPU", "CMake"],                
+            "links" : [
+                {"GitHub" : "https://github.com/athaun/autotile_gpu/"},
+                {"Link" : "https://asarg.hackresearch.com/main/"},
+                {"YouTube" : "https://youtu.be/ka_qpCJF9ZY"}
+            ],
+            "thumbnail" : "assets/thumbnails/autotile.png"
+        },
+        {
             "name": "Multiplayer Chess",
             "description": "A multiplayer chess game developed in <a target='_blank' href='azurite-engine.github.io'>my own engine</a>. It utilises sockets to send player data between a client and server and was made as a class project in my Object Oriented Programming with Java class.",
             "tags": ["Java", "Graphics", "Networking", "Team Development", "Git"],
@@ -85,22 +96,10 @@
                 {"YouTube" : ""}
             ],
             "thumbnail" : "assets/thumbnails/framed/utrgv-math.png"
-        },
-        {
-            "name" : "Autotile",
-            "description" : "",
-            "tags" : ["C++", "Graphics", "Vulkan GPGPU", "CMake"],                
-            "links" : [
-                {"GitHub" : "https://github.com/athaun/autotile_gpu/"},
-                {"Link" : ""},
-                {"YouTube" : ""}
-            ],
-            "thumbnail" : "assets/thumbnails/autotile.png"
-        },
-        
+        },        
         {
             "name" : "Ollama UI",
-            "description" : "",
+            "description" : "Yet another web UI I built for fun to familiarize myself with Ollama and local LLMs.",
             "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "MongoDB", "Tailwind CSS"],                
             "links" : [
                 {"GitHub" : "https://github.com/athaun/ollama_ui"},
@@ -111,7 +110,7 @@
         },
         {
             "name" : "Job Application Tracker",
-            "description" : "",
+            "description" : "A replacement for the spreadsheet I was using to track job applications. It is a NodeJS/Express app using MongoDB for the backend.",
             "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "MongoDB"],                
             "links" : [
                 {"GitHub" : "https://github.com/athaun/application_tracker"},
