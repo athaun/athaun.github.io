@@ -78,13 +78,47 @@
         {
             "name" : "UTRGV Math Student Reporting Software",
             "description" : "This is an application to automate grade reporting and presentation for calculus courses at UTRGV that use a complicated and non-standard learning target based grading system which can't be configured in Blackboard LMS. I have taken full ownership of the project, designing and implementing the database, backend, and frontend; I have managed project planning, development and DevOps myself from start to completion.",
-            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "MongoDB"],
             "links" : [
                 {"GitHub" : ""},
                 {"Link" : "https://mathreport.utrgv.edu"},
                 {"YouTube" : ""}
             ],
             "thumbnail" : "assets/thumbnails/framed/utrgv-math.png"
+        },
+        {
+            "name" : "Autotile",
+            "description" : "",
+            "tags" : ["C++", "Graphics", "Vulkan GPGPU", "CMake"],                
+            "links" : [
+                {"GitHub" : "https://github.com/athaun/autotile_gpu/"},
+                {"Link" : ""},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/autotile.png"
+        },
+        
+        {
+            "name" : "Ollama UI",
+            "description" : "",
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "MongoDB", "Tailwind CSS"],                
+            "links" : [
+                {"GitHub" : "https://github.com/athaun/ollama_ui"},
+                {"Link" : ""},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/ollama_ui.png"
+        },
+        {
+            "name" : "Job Application Tracker",
+            "description" : "",
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "MongoDB"],                
+            "links" : [
+                {"GitHub" : "https://github.com/athaun/application_tracker"},
+                {"Link" : ""},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/job_tracker.png"
         },
         {
             "name": "Haunted Halls of Google",
@@ -111,7 +145,7 @@
         {
             "name" : "FABCC",
             "description" : "FABCC is a resource for players of the card game Flesh and Blood where users can learn to play the game and buy custom built decks from the store. It is a NodeJS/Express based website with a simple Content Management System for administrators to publish pages and intigration with reflowhq to manage the store front.",
-            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],                
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "MongoDB"],                
             "links" : [
                 {"GitHub" : "https://github.com/athaun/fabcc"},
                 {"Link" : ""},
@@ -166,7 +200,7 @@
         {
             "name" : "UKShopper",
             "description" : "UKShopper is a website that allows users to search for products and compare prices across multiple UK retailers. It is a NodeJS/Express based website with a Content Management System for business owners to publish pages and products. Customers can create an account to post reviews and save products.",
-            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],                
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "MongoDB"],                
             "links" : [
                 {"GitHub" : ""},
                 {"Link" : ""},
@@ -176,8 +210,8 @@
         },
         {
             "name" : "Stock portfolio tracker",
-            "description" : "NodeJS/Express based website that queries the Finnhub stock API to display stock information and track the total gains/losses in a portfolio. The portfolio data is saved in MongoDB using Mongoose.",
-            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "Mongoose"],
+            "description" : "NodeJS/Express based website that queries the Finnhub stock API to display stock information and track the total gains/losses in a portfolio. The portfolio data is saved in MongoDB using MongoDB.",
+            "tags" : ["Web design", "Javascript", "Node", "Express", "EJS", "MongoDB"],
             "links" : [
                 {"GitHub" : "https://github.com/athaun/stock_portfolio_tracker"},
                 {"Link" : ""},
