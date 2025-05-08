@@ -2,24 +2,51 @@
     {
         "company": "Idaho National Laboratory",
         "link": "https://inl.gov",
-        "position": "Nuclear Software Engineer",
+        "position": "Software Engineer",
         "duration": "Summer 2024",
         "type": "Internship",
         "description": [
-            "Implemented complex features, fixed bugs, participated in beta testing, customer support and the application release cycle to track nuclear materials.",
-            "Employed Ruby on Rails and Typescript with Angular in a split architecture application."
+            "Designed and developed full-stack mark-in-use feature with sample history, validation logic, and approval pipeline to meet regulatory standards for nuclear materials storage using Ruby on Rails, TypeScript, RxJS, and Angular",
+            "Fixed bugs, wrote test docs, participated in code reviews, led SCRUM ceremonies and learned from industry experts about software engineering processes for nuclear facilities"
         ],
         "logo": "../assets/logos/inl.jfif"
     },
     {
-        "company": "UT Rio Grande Valley",
+        "company": "University of Texas Rio Grande Valley",
+        "link": "https://www.utrgv.edu",
+        "position": "Computational Theory Researcher",
+        "duration": "2022-2025",
+        "type": "Volunteer & Paid",
+        "description": [
+            "Developed a performance-focused, C++ simulator enabling large-scale Tile Automata systems",
+            "Co-authored and edited conference papers, contributing to the advancement of research in theory of computation"
+        ],
+        "logo": "../assets/logos/utrgv.jfif"
+    },
+    {
+        "company": "Texas Christian University",
+        "link": "https://www.tcu.edu",
+        "position": "Bioinformatics Researcher",
+        "duration": "2019-2023",
+        "type": "Volunteer",
+        "description": [
+            "Brought iteration time from months to days via C++ and CUDA simulator, achieving a 7,000 times speedup compared to the legacy Python model",
+            "Published research on viral spread during the COVID-19 pandemic, increasing accuracy of models and providing valuable insights into viral dynamics",
+            "Created Python tools using numpy and matplotlib to statistically analyze terabytes of simulation data.",
+            "Presented research findings at the 2021 SIAM Conference on Computational Science and Engineering, presented by invitation to the NSF Inaugural Equity in Engineering Summit."
+        ],
+        "logo": "../assets/logos/tcu.jfif"
+    },
+    {
+        "company": "University of Texas Rio Grande Valley",
         "link": "https://www.utrgv.edu",
         "position": "Software Engineer",
         "duration": "2022-2024",
         "type": "Contract",
         "description": [
-            "Designed and developed an application to streamline grading system for professors and students saving hundreds of hours each week by automating reports. Chose JavaScript and MongoDB for their large developer base and future maintainability.",
-            "Responsible for application requirements, design, development, installation and testing."
+            "Pitched project idea to faculty and then developed a website that saved hundreds of man-hours each week",
+            "Streamlined faculty and student workflows by automating report generation for a learning target-based grading system with Express, EJS, and MongoDB.",
+            "Managed full project lifecycle including requirements gathering, design, development, installation, and testing"
         ],
         "logo": "../assets/logos/utrgv.jfif"
     },
@@ -30,43 +57,16 @@
         "duration": "Summer 2023",
         "type": "Internship",
         "description": [
-            "Gathered requirements for reporting system to automate manual processes. ",
-            "Developed features for credit inquiry application front end and back end using .NET and SQL."
+            "Developed features for credit inquiry application according to architect specifications using .NET, SQL, HTML & CSS within an AGILE development environment",
+            "Automated daily financial reports using .NET and SQL, eliminating tedious manual work for a team member"
         ],
         "logo": "../assets/logos/gmf.jfif"
-    },
-    {
-        "company": "UT Rio Grande Valley",
-        "link": "https://www.utrgv.edu",
-        "position": "Research Assistant",
-        "duration": "2022-2024",
-        "type": "Volunteer",
-        "description": [
-            "Developing a performance focused, C++ and Vulkan GPGPU simulator.",
-            "Researched computability in Tile Automata (TA) and Chemical Reaction Networks (CRNs).",
-            "Edited and published research articles and posters; presented at symposia and conferences."
-        ],
-        "logo": "../assets/logos/utrgv.jfif"
-    },
-    {
-        "company": "Texas Christian University",
-        "link": "https://www.tcu.edu",
-        "position": "Research Apprentice",
-        "duration": "2019-2023",
-        "type": "Volunteer",
-        "description": [
-            "Part of a team that developed a massively parallel C++ and Nvidia Cuda simulation, achieving a 7,000 times speedup compared to the legacy python model.",
-            "Published findings as first author in the peer-reviewed Journal of Theoretical Biology.",
-            "Created Python tools using numpy and matplotlib to statistically analyze terabytes of simulation data.",
-            "Presented research findings at the 2021 SIAM Conference on Computational Science and Engineering, presented by invitation to the NSF Inaugural Equity in Engineering Summit."
-        ],
-        "logo": "../assets/logos/tcu.jfif"
     },
     {
         "company": "Various Clients",
         "link": "",
         "position": "Full Stack Web Developer",
-        "duration": "Summer 2022",
+        "duration": "2022-2025",
         "type": "Paid",
         "description": [
             "Built custom web applications to meet specific customer requirements, focusing on responsive design and optimal user experience. Demonstrated ability to deliver complete solutions from concept to deployment."
