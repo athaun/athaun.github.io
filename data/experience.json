@@ -1,5 +1,14 @@
 [
     {
+        "company": "True Anomaly Space",
+        "link": "https://trueanomaly.space",
+        "position": "Flight Software Engineer",
+        "duration": "2025-current",
+        "type": "Full-time",
+        "description": [],
+        "logo": "../assets/logos/ta.jpeg"
+    },
+    {
         "company": "Idaho National Laboratory",
         "link": "https://inl.gov",
         "position": "Software Engineer",
