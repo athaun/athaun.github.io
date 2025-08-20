@@ -10,6 +10,17 @@
     ],
     "projectList" : [
         {
+            "name" : "Jackel Satellite",
+            "description" : "Currently developing flight software for Jackal, True Anomaly's space superiority satellite.",
+            "tags" : ["C++", "Flight software", "Embedded Systems", "Hardware Testing"],
+            "links" : [
+                {"GitHub" : ""},
+                {"Link" : "https://www.trueanomaly.space/jackal"},
+                {"YouTube" : ""}
+            ],
+            "thumbnail" : "assets/thumbnails/jackal.png"
+        },
+        {
             "name" : "Cuda Influenza Simulation Model",
             "description" : "An agent-based influenza viral model that examines the effects of cellular regeneration on viral transmission between cells. This model was developed for research I conducted for over three years at TCU. It uses GPU compute with Nvidia Cuda to accelerate the modeling of large viral simulations containing millions of cells. I have presented my findings at the TCU Student Research Symposium as well as the 2021 SIAM Conference on Computational Science and Engineering. I co-authored a <a target='_blank' href='https://doi.org/10.1016/j.jtbi.2022.111370'>paper</a> that has been published in the Journal of Theoretical Biology.",
             "tags" : ["C++", "Nvidia Cuda", "Python", "MatPlotLib", "Numpy", "Git"],
