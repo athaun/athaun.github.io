@@ -10,7 +10,7 @@
     ],
     "projectList" : [
         {
-            "name" : "Jackel Satellite",
+            "name" : "Jackal Satellite",
             "description" : "Currently developing flight software for Jackal, True Anomaly's space superiority satellite.",
             "tags" : ["C++", "Flight software", "Embedded Systems", "Hardware Testing"],
             "links" : [
